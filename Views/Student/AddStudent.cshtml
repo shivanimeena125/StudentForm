@@ -1,0 +1,274 @@
+﻿@model StudentForm.Models.ViewStudentModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "AddStudent";
+}
+
+<h1>Add Student</h1>
+<hr />
+
+<form asp-action="@(Model.Student.Id == 0 ? "AddStudent" : "EditStudent")" id="studentForm">
+    <input type="hidden" asp-for="Student.Id" />
+
+    <div class="form-group">
+        <label asp-for="Student.FirstName"></label>
+        <input asp-for="Student.FirstName" class="form-control" />
+        <span asp-validation-for="Student.FirstName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Student.LastName"></label>
+        <input asp-for="Student.LastName" class="form-control" />
+        <span asp-validation-for="Student.LastName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Student.Class"></label>
+        <input asp-for="Student.Class" class="form-control" />
+        <span asp-validation-for="Student.Class" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label>Gender</label><br />
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" asp-for="Student.Gender" value="Male" checked="@("Male" == Model.Student.Gender)" />
+            <label class="form-check-label">Male</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" asp-for="Student.Gender" value="Female" checked="@("Female" == Model.Student.Gender)" />
+            <label class="form-check-label">Female</label>
+        </div>
+        <span asp-validation-for="Student.Gender" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Student.Address"></label>
+        <input asp-for="Student.Address" class="form-control" />
+        <span asp-validation-for="Student.Address" class="text-danger"></span>
+    </div>
+
+    <input type="submit" id="submitbtn" value="@(Model.Student.Id == 0 ? "Add" : "Update")" class="btn btn-sm mt-2 btn-primary" />
+    <button type="reset" class="btn btn-sm mt-2 btn-secondary " id="resetForm">Reset</button>
+</form>
+
+<hr />
+<form class="FilterForm">
+    <div class="form-row d-flex align-items-end gap-3">
+
+        <div class="form-group me-3">
+            <label for="searchFirst">First Name:</label>
+            <input type="text" name="FirstName" id="searchFirst" class="form-control" placeholder="Enter first name" />
+        </div>
+
+        <div class="form-group me-3">
+            <label for="searchLast">Last Name:</label>
+            <input type="text" name="LastName" id="searchLast" class="form-control" placeholder="Enter last name" />
+        </div>
+
+        <div class="form-group me-3">
+            <label for="gen">Gender:</label>
+            <select id="gen" name="Gender" class="form-control">
+                <option value="">-- Select --</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+        <div>
+            <button type="button" id="resetBtn" class="btn btn-sm btn-secondary">Reset</button>
+        </div>
+
+    </div>
+</form>
+
+
+
+<hr />
+
+<h4>Student List</h4>
+<table class="table table-bordered text-center w-75 mx-auto">
+    <thead class="table-dark">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Gender</th>
+            <th>Class</th>
+            <th>Address</th>
+            <th colspan="2">Action</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody">
+        <!-- Rows will be dynamically appended here -->
+    </tbody>
+</table>
+
+<!-- Keep template outside the table -->
+<template id="trtemplate">
+    <tr>
+        <td class="td_1"></td>
+        <td class="td_2"></td>
+        <td class="td_3"></td>
+        <td class="td_4"></td>
+        <td class="td_5"></td>
+        <td>
+            <button class="btn btn-sm btn-warning editBtn" data-id="">Edit</button>
+        </td>
+        <td>
+            <button class="btn btn-sm btn-danger deleteBtn" data-id="">Delete</button>
+        </td>
+    </tr>
+</template>
+<div id="paginationBtn"></div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+
+    <script>
+                $("#resetBtn").click(function () {
+            $("#searchFirst, #searchLast, #gen").val("");
+           loadStudents(1)
+        });
+
+
+        $("#searchFirst,#searchLast").on("input", function () {
+            loadStudents();  
+        });
+
+        $("#gen").on("change", function () {
+            loadStudents();
+        });
+
+         $("#resetForm").click(function () {
+           $("#studentForm")[0].reset();
+             $("#submitbtn").val("Add");
+           loadStudents()
+        });
+
+
+     //========================================================================================================================
+
+
+        $(function () {
+            loadStudents();
+            $("#submitbtn").click(function (e) {
+                e.preventDefault();
+
+                const formData = $("#studentForm").serialize();
+                const isNew = $("input[name='Student.Id']").val() == 0;
+                const url = isNew ? "/Student/AddStudent" : "/Student/EditStudent";
+
+                $.post(url, formData, function (response) {
+                    alert(response.message);
+                    if (response.success) {
+                        $("#studentForm")[0].reset();
+                        $("#submitbtn").val("Add");
+                        $("input[name='Student.Id']").val("0");
+                        loadStudents();
+                    }
+                }).fail(function () {
+                    alert("Something went wrong!");
+                });
+            });
+        });
+
+     //========================================================================================================================
+
+
+               function loadStudents() {       //=========
+
+            const firstName = $("#searchFirst").val();
+            const lastName = $("#searchLast").val();
+            const gender = $("#gen").val();
+
+            $.ajax({
+                url: '/Student/AllStudent',  
+                type: 'GET',
+                 data: {
+                    firstName: firstName,
+                    lastName: lastName,
+                    gender: gender,
+                  
+                },
+                success: function (students) {
+                    const tbody = $("#tableBody").empty(); 
+
+                    students.forEach(s => {
+                        const clone = document.getElementById('trtemplate').content.cloneNode(true);
+
+                        clone.querySelector('.td_1').textContent = s.firstName;
+                        clone.querySelector('.td_2').textContent = s.lastName;
+                        clone.querySelector('.td_3').textContent = s.gender;
+                        clone.querySelector('.td_4').textContent = s.class;
+                        clone.querySelector('.td_5').textContent = s.address;
+
+                        clone.querySelector('.editBtn').setAttribute('data-id', s.id);
+                        clone.querySelector('.deleteBtn').setAttribute('data-id', s.id);
+
+                        tbody[0].appendChild(clone);
+                    });
+                            //generatePagination(res.currentPage, res.totalPages);     //-------
+                    bindRowEvents(); 
+                },
+                error: function () {
+                    alert("Failed to load students.");
+                }
+            });
+        }
+  //========================================================================================================================
+
+        //         function generatePagination(currentPage, totalPages) {
+        //     let paginationHtml = '';
+
+        //     Previous button
+        //     if (currentPage > 1) {
+        //         paginationHtml += `<button onclick="loadStudents(${currentPage - 1})">Previous</button>`;
+        //     }
+
+        //     Page numbers
+        //     for (let i = 1; i <= totalPages; i++) {
+        //         if (i === currentPage) {
+        //             paginationHtml += `<button disabled>${i}</button>`;
+        //         } else {
+        //             paginationHtml += `<button onclick="loadStudents(${i})">${i}</button>`;
+        //         }
+        //     }
+
+        //     Next button
+        //     if (currentPage < totalPages) {
+        //         paginationHtml += `<button onclick="loadStudents(${currentPage + 1})">Next</button>`;
+        //     }
+
+        //             $("#paginationBtn").html(paginationHtml);
+        // }
+
+//========================================================================================================================
+        function bindRowEvents() {
+            $(".editBtn").off().on("click", function () {
+                const studentId = $(this).data("id");
+
+                $.get('/Student/GetStudentById', { id: studentId }, function (student) {
+                    if (student) {
+                        $("input[name='Student.Id']").val(student.id);
+                        $("input[name='Student.FirstName']").val(student.firstName);
+                        $("input[name='Student.LastName']").val(student.lastName);
+                        $("input[name='Student.Class']").val(student.class);
+                        $("input[name='Student.Gender'][value='" + student.gender + "']").prop("checked", true);
+                        $("input[name='Student.Address']").val(student.address);
+
+                        $("#submitbtn").val("Update");
+                    }
+                });
+            });
+
+            $(".deleteBtn").off().on("click", function () {
+                const studentId = $(this).data("id");
+                const row = $(this).closest("tr");
+
+                if (confirm("Do you really want to delete this student?")) {
+                    $.post('/Student/DeleteStudent', { id: studentId }, function (response) {
+                        alert(response.message);
+                        if (response.success) {
+                            row.remove();
+                        }
+                    });
+                }
+            });
+        }
+    </script>
+}
