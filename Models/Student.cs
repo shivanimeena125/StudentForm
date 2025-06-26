@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace StudentForm.Models
 {
@@ -14,6 +15,12 @@ namespace StudentForm.Models
         public string Gender { get; set; }
 
         public string Address { get; set; }
+
+        public int? CityId { get; set; }
+        [ForeignKey("CityId")]
+        public City City { get; set; }
+
+
 
 
     }

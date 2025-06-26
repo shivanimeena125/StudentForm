@@ -52,9 +52,14 @@ namespace StudentForm.Repository
             return true;
         }
 
-        public List<Student> GetFiltered(string firstName, string lastName, string gender)
+        public List<Student> GetFiltered(string firstName, string lastName, string gender,string country,string state, string city)
         {
-            var students = _context.StudentForm.AsQueryable();
+            //var students = _context.StudentForm.AsQueryable();
+            var students = _context.StudentForm
+        .Include(s => s.City)
+        .ThenInclude(c => c.State)
+        .ThenInclude(st => st.Country)
+        .AsQueryable();
 
             if (!string.IsNullOrEmpty(firstName))
                 students = students.Where(s => s.FirstName.Contains(firstName));
@@ -64,6 +69,15 @@ namespace StudentForm.Repository
 
             if (!string.IsNullOrEmpty(gender))
                 students = students.Where(s => s.Gender == gender);
+
+            if (!string.IsNullOrEmpty(city))
+                students = students.Where(s => s.City.CityName == city);
+
+            if (!string.IsNullOrEmpty(state))
+                students = students.Where(s => s.City.State.StateName == state);
+
+            if (!string.IsNullOrEmpty(country))
+                students = students.Where(s => s.City.State.Country.CountryName == country);
 
             return students.ToList();
         }

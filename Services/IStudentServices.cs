@@ -15,7 +15,7 @@ namespace StudentForm.Services
 
         Task<bool> DeleteStudent(int id);
 
-        List<Student> GetFiltered(string firstName, string lastName, string gender);
+        List<Student> GetFiltered(string firstName, string lastName, string gender, string country, string state, string city);
 
         //PaginatedResult<Student> GetFiltered(string firstName, string lastName, string gender, int page = 1, int pageSize = 5);
     }

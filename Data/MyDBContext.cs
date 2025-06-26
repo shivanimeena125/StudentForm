@@ -10,5 +10,12 @@ namespace StudentForm.Data
         }
 
         public DbSet<Student> StudentForm { get; set; }
+        public DbSet<Country> Countries { get; set; }
+        public DbSet<State> States { get; set; }
+        public DbSet<City> Cities { get; set; }
+
+
+
+
     }
 }

@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using StudentForm.Data;
 using StudentForm.Models;
 using StudentForm.Services;
 using System.Threading.Tasks;
@@ -10,9 +12,12 @@ namespace StudentForm.Controllers
     {
         private readonly IStudentServices _studentService;
 
-        public StudentController(IStudentServices studentServices)
+        public readonly ICity _city;
+
+        public StudentController(IStudentServices studentServices,ICity city)
         {
             _studentService = studentServices;
+           _city = city;
         }
 
 
@@ -29,10 +34,18 @@ namespace StudentForm.Controllers
 
             var students = await _studentService.AllStudent();
 
+            var cities = await _city.GetAllCities();
+            var cityList = cities.Select(c => new SelectListItem
+            {
+                Text = c.CityName,     
+                Value = c.Id.ToString() 
+            }).ToList();
+
             var viewModel = new ViewStudentModel
             {
                 Student = student,
-                AllStudents = students
+                AllStudents = students,
+                 CityList = cityList
             };
 
             return View(viewModel);
@@ -42,8 +55,7 @@ namespace StudentForm.Controllers
         [HttpPost]
         public async Task<JsonResult> AddStudent(Student student)
         {
-            if (ModelState.IsValid)
-            {
+           
                 if (student.Id == 0)
                 {
                     await _studentService.AddStudent(student);
@@ -55,7 +67,7 @@ namespace StudentForm.Controllers
                     return Json(new { success = true, message = "Update successfully." });
                 }
 
-            }
+           
             ModelState.Clear();
             return Json(new { success = false, message = "something wrong..." });
         }
@@ -64,10 +76,21 @@ namespace StudentForm.Controllers
 
 
         [HttpGet]
-        public async Task<JsonResult> AllStudent(string firstName, string lastName, string gender)
+        public async Task<JsonResult> AllStudent(string firstName, string lastName, string gender,string country,string state,string city)
         {
-            var students = _studentService.GetFiltered(firstName, lastName, gender);
-            return Json(students);
+            var students = _studentService.GetFiltered(firstName, lastName, gender,country,state,city);
+            var result = students.Select(s => new {
+                s.Id,
+                s.FirstName,
+                s.LastName,
+                s.Gender,
+                s.Class,
+                s.Address,
+                CityName = s.City?.CityName,
+                StateName = s.City?.State?.StateName,
+                CountryName = s.City?.State?.Country?.CountryName
+            });
+            return Json(result);
         }
 
 
@@ -100,19 +123,31 @@ namespace StudentForm.Controllers
             {
                 return NotFound();
             }
-            return View(student);
+            var cities = await _city.GetAllCities();
+            var cityList = cities.Select(c => new SelectListItem
+            {
+                Text = c.CityName,
+                Value = c.Id.ToString()
+            }).ToList();
+
+            var viewModel = new ViewStudentModel
+            {
+                Student = student,
+                CityList = cityList
+            };
+
+            return View(viewModel);
+
         }
 
 
         [HttpPost]
         public async Task<JsonResult> EditStudent(Student student)
         {
-            if (ModelState.IsValid)
-            {
                 await _studentService.UpdateStudent(student);
 
                 return Json(new { success = true, message = "Student updated successfully!" });
-            }
+            
 
             return Json(new { success = false, message = "Validation failed!" });
         }
@@ -134,6 +169,9 @@ namespace StudentForm.Controllers
                 return Json(new { success = false, message = "Student not found!" });
             }
         }
-     
+
+
+      
+
     }
 }
