@@ -122,7 +122,7 @@
     <script>
                 $("#resetBtn").click(function () {
             $("#searchFirst, #searchLast, #gen").val("");
-           loadStudents(1)
+           loadStudents()
         });
 
 
@@ -170,7 +170,7 @@
      //========================================================================================================================
 
 
-               function loadStudents() {       //=========
+               function loadStudents() {      
 
             const firstName = $("#searchFirst").val();
             const lastName = $("#searchLast").val();
@@ -183,6 +183,7 @@
                     firstName: firstName,
                     lastName: lastName,
                     gender: gender,
+                           
                   
                 },
                 success: function (students) {
@@ -202,7 +203,7 @@
 
                         tbody[0].appendChild(clone);
                     });
-                            //generatePagination(res.currentPage, res.totalPages);     //-------
+                           
                     bindRowEvents(); 
                 },
                 error: function () {
@@ -210,6 +211,8 @@
                 }
             });
         }
+                               
+
   //========================================================================================================================
 
         //         function generatePagination(currentPage, totalPages) {

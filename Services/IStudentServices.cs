@@ -17,6 +17,6 @@ namespace StudentForm.Services
 
         List<Student> GetFiltered(string firstName, string lastName, string gender);
 
-        //PaginatedResult<Student> GetFiltered(string firstName, string lastName, string gender, int page = 1, int pageSize = 5);
+        //PaginatedResult<Student> GetFiltered(string firstName, string lastName, string gender, int page = 1, int pageSize = 10);
     }
 }

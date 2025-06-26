@@ -74,7 +74,7 @@ namespace StudentForm.Controllers
         //[HttpGet]
         //public JsonResult AllStudent(string firstName, string lastName, string gender, int page = 1)
         //{
-        //    var result = _studentService.GetFiltered(firstName, lastName, gender, page, 5);
+        //    var result = _studentService.GetFiltered(firstName, lastName, gender, page, 10);
         //    return Json(result);
         //}
 
