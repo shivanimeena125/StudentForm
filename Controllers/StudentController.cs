@@ -37,19 +37,19 @@ namespace StudentForm.Controllers
             var cities = await _city.GetAllCities();
             var cityList = cities.Select(c => new SelectListItem
             {
-                Text = c.CityName,     
-                Value = c.Id.ToString() 
+                Text = c.CityName,
+                Value = c.Id.ToString()
             }).ToList();
 
             var viewModel = new ViewStudentModel
             {
                 Student = student,
                 AllStudents = students,
-                 CityList = cityList
+                CityList = cityList
             };
 
             return View(viewModel);
-           
+
         }
 
         [HttpPost]
@@ -76,9 +76,9 @@ namespace StudentForm.Controllers
 
 
         [HttpGet]
-        public async Task<JsonResult> AllStudent(string firstName, string lastName, string gender,string country,string state,string city)
+        public async Task<JsonResult> AllStudent(string firstName, string lastName, string gender, int cityId, int stateId, int countryId)
         {
-            var students = _studentService.GetFiltered(firstName, lastName, gender,country,state,city);
+            var students = _studentService.GetFiltered(firstName, lastName, gender,cityId,stateId,countryId);
             var result = students.Select(s => new {
                 s.Id,
                 s.FirstName,
@@ -86,8 +86,11 @@ namespace StudentForm.Controllers
                 s.Gender,
                 s.Class,
                 s.Address,
+               
                 CityName = s.City?.CityName,
+             
                 StateName = s.City?.State?.StateName,
+             
                 CountryName = s.City?.State?.Country?.CountryName
             });
             return Json(result);
@@ -107,10 +110,30 @@ namespace StudentForm.Controllers
         public async Task<JsonResult> GetStudentById(int id)
         {
             var student = await _studentService.GetStudentById(id);
+
             if (student == null)
                 return Json(null);
 
-            return Json(student);
+            //return Json(student);
+
+            return Json(new
+            {
+                id = student.Id,
+                firstName = student.FirstName,
+                lastName = student.LastName,
+                gender = student.Gender,
+                @class = student.Class,
+                address = student.Address,
+
+                cityId = student.City?.Id,
+                cityName = student.City?.CityName,
+
+                stateId = student.City?.State?.Id,
+                stateName = student.City?.State?.StateName,
+
+                countryId = student.City?.State?.Country?.Id,
+                countryName = student.City?.State?.Country?.CountryName
+            });
         }
 
 

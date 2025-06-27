@@ -29,8 +29,16 @@ namespace StudentForm.Repository
 
          public async Task<Student> GetStudentById(int id)
         {
-             return await _context.StudentForm.FirstOrDefaultAsync(s => s.Id == id);    
+            return await _context.StudentForm
+       .Include(s => s.City)
+           .ThenInclude(c => c.State)
+               .ThenInclude(st => st.Country)
+       .FirstOrDefaultAsync(s => s.Id == id);
+            
+            //return await _context.StudentForm.FirstOrDefaultAsync(s => s.Id == id);    
         }
+
+
 
         public async Task UpdateStudent(Student student)
         {
@@ -52,7 +60,7 @@ namespace StudentForm.Repository
             return true;
         }
 
-        public List<Student> GetFiltered(string firstName, string lastName, string gender,string country,string state, string city)
+        public List<Student> GetFiltered(string firstName, string lastName, string gender, int cityId, int stateId, int countryId)
         {
             //var students = _context.StudentForm.AsQueryable();
             var students = _context.StudentForm
@@ -70,15 +78,15 @@ namespace StudentForm.Repository
             if (!string.IsNullOrEmpty(gender))
                 students = students.Where(s => s.Gender == gender);
 
-            if (!string.IsNullOrEmpty(city))
-                students = students.Where(s => s.City.CityName == city);
+            if (cityId > 0)
+                students = students.Where(s => s.CityId == cityId);
 
-            if (!string.IsNullOrEmpty(state))
-                students = students.Where(s => s.City.State.StateName == state);
+            if (stateId > 0)
+                students = students.Where(s => s.City.StateId == stateId);
 
-            if (!string.IsNullOrEmpty(country))
-                students = students.Where(s => s.City.State.Country.CountryName == country);
-
+            if (countryId > 0)
+                students = students.Where(s => s.City.State.CountryId == countryId);
+           
             return students.ToList();
         }
 

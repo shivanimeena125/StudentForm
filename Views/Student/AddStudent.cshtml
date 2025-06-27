@@ -10,7 +10,12 @@
 
 <form asp-action="@(Model.Student.Id == 0 ? "AddStudent" : "EditStudent")" id="studentForm">
     <input type="hidden" asp-for="Student.Id" />
-
+    @* <input type="hidden" name="Student.CityId" />
+   
+    <input type="hidden" name="Student.StateId" />
+    
+    <input type="hidden" name="Student.CountryId" /> *@
+ 
     <div class="form-group">
         <label asp-for="Student.FirstName"></label>
         <input asp-for="Student.FirstName" class="form-control" />
@@ -176,7 +181,7 @@
         // all rest functionality 
                 $("#resetBtn").click(function () {
              $("#searchFirst, #searchLast, #gen,#filterCountry,#filterState,#filterCity").val("");
-           loadStudents(1)
+           loadStudents()
         });
 
 
@@ -202,11 +207,21 @@
 
 
          $("#resetForm").click(function () {
+                       $("#countryDropdown").val("").html('<option value="">-- Select Country --</option>');
+                    $("#stateDropdown").val("").html('<option value="">-- Select State --</option>');
+                    $("#cityDropdown").val("").html('<option value="">-- Select City --</option>');
+
+                             $.get('/City/GetAllCountries', function (countries) {
+                countries.forEach(c => {
+                    $("#countryDropdown").append(`<option value="${c.id}">${c.countryName}</option>`);
+                });
+            });
            $("#studentForm")[0].reset();
              $("#submitbtn").val("Add");
            loadStudents()
         });
 
+               
 
      //========================================================================================================================
      //student add and update ke liye ajax
@@ -215,6 +230,12 @@
             loadStudents();
             $("#submitbtn").click(function (e) {
                 e.preventDefault();
+
+                         const cityId = $("#cityDropdown").val();
+                if (!cityId) {
+                    alert("Please select a city before submitting.");
+                    return;
+                }
 
                 const formData = $("#studentForm").serialize();
                 const isNew = $("input[name='Student.Id']").val() == 0;
@@ -242,10 +263,9 @@
             const firstName = $("#searchFirst").val();
             const lastName = $("#searchLast").val();
             const gender = $("#gen").val();
-                    const country = $("#filterCountry").val();
-        const state = $("#filterState").val();
-        const city = $("#filterCity").val();
-
+        const countryId = parseInt($("#filterCountry").val()) || 0;
+        const stateId = parseInt($("#filterState").val()) || 0;
+        const cityId = parseInt($("#filterCity").val()) || 0;
 
             $.ajax({
                 url: '/Student/AllStudent',  
@@ -254,10 +274,9 @@
                     firstName: firstName,
                     lastName: lastName,
                     gender: gender,
-                    country: country,
-                     state: state,
-                     city: city
-                  
+                                 countryId: countryId,
+                    stateId: stateId,
+                    cityId: cityId
                 },
                 success: function (students) {
                     const tbody = $("#tableBody").empty(); 
@@ -328,8 +347,33 @@ function bindRowEvents() {
                         $("input[name='Student.Class']").val(student.class);
                         $("input[name='Student.Gender'][value='" + student.gender + "']").prop("checked", true);
                         $("input[name='Student.Address']").val(student.address);
-                        $("select[name='Student.CityId']").val(student.cityId);
+                      
+                                 $.get('/City/GetAllCountries', function (countries) {
+                        $("#countryDropdown").html('<option value="">-- Select Country --</option>');
+                        countries.forEach(c => {
+                            const selected = c.id === student.countryId ? 'selected' : '';
+                            $("#countryDropdown").append(`<option value="${c.id}" ${selected}>${c.countryName}</option>`);
+                        });
 
+                    
+                        $.get(`/City/GetStatesByCountryId?countryId=${student.countryId}`, function (states) {
+                            $("#stateDropdown").html('<option value="">-- Select State --</option>');
+                            states.forEach(s => {
+                                const selected = s.id === student.stateId ? 'selected' : '';
+                                $("#stateDropdown").append(`<option value="${s.id}" ${selected}>${s.stateName}</option>`);
+                            });
+
+                      
+                            $.get(`/City/GetCitiesByStateId?stateId=${student.stateId}`, function (cities) {
+                                $("#cityDropdown").html('<option value="">-- Select City --</option>');
+                                cities.forEach(c => {
+                                    const selected = c.id === student.cityId ? 'selected' : '';
+                                    $("#cityDropdown").append(`<option value="${c.id}" ${selected}>${c.cityName}</option>`);
+                                });
+                            });
+                        });
+                    });
+ 
                         $("#submitbtn").val("Update");
                     }
                 });
@@ -352,61 +396,54 @@ function bindRowEvents() {
 
         //========================================================================================================================
                 // Load countries, states cities for filtering
-                        $(document).ready(function () {
-          
+                               $(document).ready(function () {
+
+           
             $.get('/City/GetAllCountries', function (data) {
                 data.forEach(country => {
-                    $("#filterCountry").append(`<option value="${country.countryName}">${country.countryName}</option>`);
+                    $("#filterCountry").append(`<option value="${country.id}">${country.countryName}</option>`);
                 });
             });
 
+            
             $("#filterCountry").change(function () {
-                const countryName = $(this).val();
+                const countryId = $(this).val();
                 $("#filterState").html('<option value="">-- Select State --</option>');
                 $("#filterCity").html('<option value="">-- Select City --</option>');
 
-                if (countryName) {
-                            $.get('/City/GetAllCountries', function (countries) {
-                        const country = countries.find(c => c.countryName === countryName);
-                        if (country) {
-                                    $.get('/City/GetStatesByCountryId?countryId=' + country.id, function (states) {
-                                states.forEach(state => {
-                                    $("#filterState").append(`<option value="${state.stateName}">${state.stateName}</option>`);
-                                });
-                            });
-                        }
+                if (countryId) {
+                    $.get('/City/GetStatesByCountryId?countryId=' + countryId, function (states) {
+                        states.forEach(state => {
+                            $("#filterState").append(`<option value="${state.id}">${state.stateName}</option>`);
+                        });
                     });
                 }
-            });
 
-            $("#filterState").change(function () {
-                const stateName = $(this).val();
-                $("#filterCity").html('<option value="">-- Select City --</option>');
-
-                const countryName = $("#filterCountry").val();
-                if (stateName && countryName) {
-                            $.get('/City/GetAllCountries', function (countries) {
-                        const country = countries.find(c => c.countryName === countryName);
-                        if (country) {
-                                    $.get('/City/GetStatesByCountryId?countryId=' + country.id, function (states) {
-                                const state = states.find(s => s.stateName === stateName);
-                                if (state) {
-                                            $.get('/City/GetCitiesByStateId?stateId=' + state.id, function (cities) {
-                                        cities.forEach(city => {
-                                            $("#filterCity").append(`<option value="${city.cityName}">${city.cityName}</option>`);
-                                        });
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
-
-            $("#filterCity").change(function () {
                 loadStudents(); 
             });
+
+           
+            $("#filterState").change(function () {
+                const stateId = $(this).val();
+                $("#filterCity").html('<option value="">-- Select City --</option>');
+
+                if (stateId) {
+                    $.get('/City/GetCitiesByStateId?stateId=' + stateId, function (cities) {
+                        cities.forEach(city => {
+                            $("#filterCity").append(`<option value="${city.id}">${city.cityName}</option>`);
+                        });
+                    });
+                }
+
+                loadStudents(); 
+            });
+
+            
+            $("#filterCity").change(function () {
+                loadStudents();
+            });
         });
+
         //=====================================================================================================
         //country, state city dropdwoun ke liye
                 $(document).ready(function () {
