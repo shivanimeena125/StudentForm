@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Form Builder";
+}
+
+<script src="https://cdn.form.io/formio.full.min.js"></script>
+<link rel="stylesheet" href="https://cdn.form.io/formio.full.min.css" />
+
+<h2>Design Your Form</h2>
+<input type="text" id="title" placeholder="Enter form title" />
+
+<div id="builder"></div>
+
+<form id="saveForm" method="post" action="/Form/SaveJson">
+    <input type="hidden" name="jsonSchema" id="jsonSchema" />
+    <input type="hidden" name="title" id="formTitle" />
+    <button type="submit">Save Form</button>
+</form>
+
+<script>
+    Formio.builder(document.getElementById('builder'), {}).then(function(builder) {
+        builder.on('change', () => {
+            const schema = builder.schema;
+            document.getElementById('jsonSchema').value = JSON.stringify(schema);
+        });
+    });
+
+    document.getElementById("saveForm").addEventListener("submit", function () {
+        document.getElementById("formTitle").value = document.getElementById("title").value;
+    });
+</script>
