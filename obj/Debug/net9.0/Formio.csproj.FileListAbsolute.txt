@@ -293,6 +293,7 @@ C:\Users\Admin\Desktop\Shivani\FormIO\obj\Debug\net9.0\Formio.MvcApplicationPart
 C:\Users\Admin\Desktop\Shivani\FormIO\obj\Debug\net9.0\Formio.RazorAssemblyInfo.cache
 C:\Users\Admin\Desktop\Shivani\FormIO\obj\Debug\net9.0\Formio.RazorAssemblyInfo.cs
 C:\Users\Admin\Desktop\Shivani\FormIO\obj\Debug\net9.0\Formio.sourcelink.json
+C:\Users\Admin\Desktop\Shivani\FormIO\obj\Debug\net9.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Admin\Desktop\Shivani\FormIO\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Admin\Desktop\Shivani\FormIO\obj\Debug\net9.0\scopedcss\bundle\Formio.styles.css
 C:\Users\Admin\Desktop\Shivani\FormIO\obj\Debug\net9.0\scopedcss\projectbundle\Formio.bundle.scp.css
@@ -420,8 +421,8 @@ C:\Users\Admin\Desktop\Shivani\FormIO\obj\Debug\net9.0\compressed\7w75r5rwut-jjs
 C:\Users\Admin\Desktop\Shivani\FormIO\obj\Debug\net9.0\compressed\6842agn43z-9vr69e8ynj.gz
 C:\Users\Admin\Desktop\Shivani\FormIO\obj\Debug\net9.0\compressed\uufljja690-87fc7y1x7t.gz
 C:\Users\Admin\Desktop\Shivani\FormIO\obj\Debug\net9.0\compressed\efjn61x6ok-mlv21k5csn.gz
-C:\Users\Admin\Desktop\Shivani\FormIO\obj\Debug\net9.0\compressed\2kdj3y98o4-60clptm3kg.gz
-C:\Users\Admin\Desktop\Shivani\FormIO\obj\Debug\net9.0\compressed\q11m8k7de5-60clptm3kg.gz
+C:\Users\Admin\Desktop\Shivani\FormIO\obj\Debug\net9.0\compressed\2kdj3y98o4-zinaok7w2t.gz
+C:\Users\Admin\Desktop\Shivani\FormIO\obj\Debug\net9.0\compressed\q11m8k7de5-zinaok7w2t.gz
 C:\Users\Admin\Desktop\Shivani\FormIO\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\Admin\Desktop\Shivani\FormIO\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\Admin\Desktop\Shivani\FormIO\obj\Debug\net9.0\staticwebassets.development.json

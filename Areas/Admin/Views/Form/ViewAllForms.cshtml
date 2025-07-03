@@ -1,0 +1,66 @@
+﻿@model List<Formio.Models.ViewFormModel>
+
+@{
+    ViewData["Title"] = "Form List";
+}
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+<div class="container mt-4">
+    <h2 class="mb-4 text-primary">Online Forms</h2>
+
+        <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>Title</th>
+                    <th>Created By</th>
+                    <th>Created Date</th>
+                   <th>Action</th>
+                
+                   
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var form in Model)
+                {
+                    <tr>
+                        <td>@form.Title</td>
+                        <td>@form.CreatedByName</td>
+                        <td>@form.CreatedUtc.ToLocalTime().ToString()</td>
+                        <td>
+
+                        <a id="ViewBtn" class="btn btn-secondary" asp-controller="Form" asp-action="ViewForm" asp-route-id="@form.Id">View</a>
+
+                        <a id="EditBtn" class="btn btn-secondary" asp-controller="Form" asp-action="EditForm" asp-route-id="@form.Id">Edit</a>
+                            <button id="deleteBtn" type="submit" class="btn btn-danger" data-id="@form.Id">Delete</button>
+
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+</div>
+
+
+<script>
+  
+    $("#deleteBtn").off().on("click", function () {
+                        const formId = $(this).data("id");
+                        const row = $(this).closest("tr");
+
+                        if (confirm("Do you really want to delete this student?")) {
+                            $.post('/Form/FormDelete', { id: formId }, function (response) {
+                                alert(response.message);
+                                if (response.success) {
+                                    row.remove();
+                                }
+                            });
+                        }
+                    });
+
+    
+ </script>
+

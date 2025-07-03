@@ -1,0 +1,20 @@
+﻿
+@model List<Formio.Models.ViewFormModel>
+@{
+    ViewData["Title"] = "online forms";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4 text-primary">Online Forms</h2>
+
+    <ul class="list-group">
+        @foreach (var form in Model)
+        {
+            
+                <a asp-controller="Form" asp-action="ViewForm" asp-route-id="@form.Id" class="text-decoration-none">
+                    @form.Title
+                </a>
+            
+        }
+    </ul>
+</div>

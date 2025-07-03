@@ -1,0 +1,34 @@
+﻿@model Formio.Models.Forms
+
+@{
+    ViewData["Title"] = "Form render";
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+<script src="https://cdn.form.io/js/formio.embed.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<div class="container mt-5">
+
+    <h3>@Model.Title</h3>
+
+    <div id="formioRender" class="border rounded bg-light p-3"></div>
+   
+    <script>
+       $(document).ready(function(){
+
+             Formio.createForm(document.getElementById('formioRender'), @Html.Raw(Model.FormFields));
+             // $(function () {
+
+             //      alert("Form loaded successfully.");
+             //     });
+
+        })
+           
+    </script>
+
+
+
+
+</div>

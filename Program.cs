@@ -1,6 +1,6 @@
-using Formio.Data;
-using Formio.Repository;
-using Formio.Servises;
+using Formio.Areas.Admin.Repository;
+using Formio.Areas.Identity.Data;
+using Formio.Areas.Admin.Servises;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,7 +12,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 
 
-builder.Services.AddIdentity<IdentityUser, IdentityRole>(options => {
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+{
     options.SignIn.RequireConfirmedAccount = false;
 })
     .AddEntityFrameworkStores<ApplicationDbContext>()
@@ -37,15 +38,23 @@ else
 
 app.UseHttpsRedirection();
 app.UseRouting();
+app.UseAuthentication();
 
 app.UseAuthorization();
 
 app.MapStaticAssets();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Form}/{action=Builder}/{id?}")
-    .WithStaticAssets();
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+          name: "default",
+          pattern: "{controller=Home}/{action=Index}/{id?}");
+
+    endpoints.MapControllerRoute(
+        name: "Admin",
+      
+        pattern: "Admin/{controller=Form}/{action=ViewAllForms}/{id?}");
+});
 
 app.MapRazorPages()
    .WithStaticAssets();

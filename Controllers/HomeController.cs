@@ -1,6 +1,7 @@
-using System.Diagnostics;
+using Formio.Areas.Admin.Servises;
 using Formio.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace Formio.Controllers
 {
@@ -8,15 +9,26 @@ namespace Formio.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public readonly IFormServices _formService;
+
+        public HomeController(ILogger<HomeController> logger,IFormServices formServices)
         {
             _logger = logger;
+            _formService = formServices;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+           
             return View();
         }
+
+        public async Task<IActionResult> OnlineForms()
+        {
+            var forms = await _formService.AllForms();
+            return View(forms);
+        }
+
 
         public IActionResult Privacy()
         {

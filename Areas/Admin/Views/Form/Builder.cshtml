@@ -1,0 +1,99 @@
+﻿@model Formio.Models.Forms
+
+@{
+    ViewData["Title"] = "Form Builder";
+    var jsonText = Model?.FormFields ?? "{}";
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+<script src="https://cdn.form.io/js/formio.embed.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous">
+</script>
+
+<div class="container mt-5">
+    <h3 class="mb-4 text-primary">Design Your Form</h3>
+
+    <form id="saveForm" class="mt-4">
+
+        <div class="form-group mb-4">
+        <input type="text" id="title"  placeholder="Enter form title" class="form-control" value="@Model.Title" />
+    </div>
+
+        <div id="FormBuilder" class="border rounded bg-light p-3"></div>
+
+        <input type="hidden"  id="jsonSchema" class="form-control"/>
+       
+        <button class="btn btn-success btn-lg" type="submit">
+            <i class="bi bi-save"></i> Save Form
+        </button>
+    </form>
+</div>
+<pre class="border bg-light p-2">@jsonText</pre>
+<script>
+    debugger
+        @{
+            var safeJson = Model?.FormFields ?? "{}";
+    }
+
+       
+    const formJson = @Html.Raw(Json.Serialize(safeJson));
+
+    Formio.builder(document.getElementById('FormBuilder'), formJson,{}).then(function(builder) {
+        builder.on('change', () => {
+            const schema = builder.schema;
+            $('#jsonSchema').val(JSON.stringify(schema));
+        });
+    });
+
+    //=======================================================
+    $('#saveForm').on('submit', function(event) {
+        event.preventDefault(); 
+
+        const formTitle = $('#title').val().trim();
+        const formFields = $('#jsonSchema').val().trim();
+
+        if(!formTitle){
+      alert("Please enter a form title.");
+            return;
+        }
+        $.ajax({
+            url:'/Form/Builder',
+            type: 'POST',
+            data: {
+                Title: formTitle,
+                FormFields: formFields
+            },
+            success: function(response) {
+                if(response.success){
+                    alert(response.message);
+                }
+                else{
+                    if(response.redirect){
+                        window.location.href = response.redirect;
+                        return;
+                    } else {
+                        alert(response.message);
+                    }
+                }
+
+            },
+            error: function(xhr,status,result) {
+                if(xhr.status===401){
+                    alert("You are not authorized to perform this action. Please log in first.");
+                }
+                else if(xhr.status===400){
+                    alert("user not found!. Please try again.");
+                }
+
+               else{
+                alert("something went wrong not form submit!. Please try again.");
+               }
+            }
+        })
+        
+    });
+
+</script>
