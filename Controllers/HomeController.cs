@@ -17,7 +17,7 @@ namespace Formio.Controllers
             _formService = formServices;
         }
 
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
            
             return View();
@@ -25,7 +25,7 @@ namespace Formio.Controllers
 
         public async Task<IActionResult> OnlineForms()
         {
-            var forms = await _formService.AllForms();
+            var forms = await _formService.ViewFormsAsync();
             return View(forms);
         }
 

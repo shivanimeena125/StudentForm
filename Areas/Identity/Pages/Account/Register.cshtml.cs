@@ -87,9 +87,12 @@ namespace Formio.Areas.Identity.Pages.Account
             [Display(Name = "Email")]
             public string Email { get; set; }
 
-            [Required]
-            [Display(Name = "Select Role")]
-            public string Role { get; set; }
+
+            //[Required]
+            //[Display(Name = "Select Role")]
+            //public string Role { get; set; }
+
+
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
@@ -111,21 +114,21 @@ namespace Formio.Areas.Identity.Pages.Account
         }
         public List<SelectListItem> Roles { get; set; }
 
-        private void LoadRoles()
-        {
-            Roles = new List<SelectListItem>
-    {
-        new SelectListItem { Value = "User", Text = "User" },
-        new SelectListItem { Value = "Admin", Text = "Admin" },
-        new SelectListItem { Value = "Editor", Text = "Editor" }
-    };
-        }
+    //    private void LoadRoles()
+    //    {
+    //        Roles = new List<SelectListItem>
+    //{
+    //    new SelectListItem { Value = "User", Text = "User" },
+    //    new SelectListItem { Value = "Admin", Text = "Admin" },
+    //    new SelectListItem { Value = "Editor", Text = "Editor" }
+    //};
+    //    }
 
         public async Task OnGetAsync(string returnUrl = null)
         {
             ReturnUrl = returnUrl;
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
-            LoadRoles();
+            //LoadRoles();
         }
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
@@ -145,7 +148,7 @@ namespace Formio.Areas.Identity.Pages.Account
                 {
                     _logger.LogInformation("User created a new account with password.");
 
-                    await _userManager.AddToRoleAsync(user, Input.Role);
+                    //await _userManager.AddToRoleAsync(user, Input.Role);
 
                     var userId = await _userManager.GetUserIdAsync(user);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
@@ -176,7 +179,7 @@ namespace Formio.Areas.Identity.Pages.Account
             }
 
             // If we got this far, something failed, redisplay form
-            LoadRoles();
+           // LoadRoles();
             return Page();
         }
 

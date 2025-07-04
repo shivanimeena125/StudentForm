@@ -26,7 +26,7 @@ namespace Formio.Models
         public Guid VersionId { get; set; }
 
         [Required]
-        public Guid FormGroupId { get; set; }= Guid.NewGuid();
+        public Guid FormGroupId { get; set; }
 
         [Required]
         public bool Latest { get; set; }

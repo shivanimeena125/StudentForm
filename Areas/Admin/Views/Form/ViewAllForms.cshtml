@@ -4,22 +4,20 @@
     ViewData["Title"] = "Form List";
 }
 
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="~/js/site.js" asp-append-version="true"></script>
-
 <div class="container mt-4">
     <h2 class="mb-4 text-primary">Online Forms</h2>
-
+    <div>
+        <input type="text" id="searchInput" name="Title" class="form-control mb-3" placeholder="Search by title..." />
+    </div>
         <table class="table table-bordered table-striped">
             <thead class="table-dark">
                 <tr>
                     <th>Title</th>
                     <th>Created By</th>
                     <th>Created Date</th>
+                    <th>Modified Date</th>
                    <th>Action</th>
-                
-                   
+   
                 </tr>
             </thead>
             <tbody>
@@ -30,11 +28,15 @@
                         <td>@form.CreatedByName</td>
                         <td>@form.CreatedUtc.ToLocalTime().ToString()</td>
                         <td>
+                        @(form.ModifiedUtc.HasValue? form.ModifiedUtc.Value.ToLocalTime().ToString() : " ")
+                        </td>
+                    
+                        <td>
 
-                        <a id="ViewBtn" class="btn btn-secondary" asp-controller="Form" asp-action="ViewForm" asp-route-id="@form.Id">View</a>
+                        <a id="ViewBtn" class="btn btn-secondary m-2" asp-controller="Form" asp-action="ViewForm" asp-route-id="@form.Id">View</a>
 
-                        <a id="EditBtn" class="btn btn-secondary" asp-controller="Form" asp-action="EditForm" asp-route-id="@form.Id">Edit</a>
-                            <button id="deleteBtn" type="submit" class="btn btn-danger" data-id="@form.Id">Delete</button>
+                        <a id="EditBtn" class="btn btn-warning m-2" asp-controller="Form" asp-action="UpdateForm" asp-route-id="@form.Id">Edit</a>
+                        <button  type="submit" class="btn btn-danger deleteBtn m-2" data-id="@form.Id">Delete</button>
 
                         </td>
                     </tr>
@@ -44,23 +46,16 @@
         </table>
 </div>
 
-
-<script>
-  
-    $("#deleteBtn").off().on("click", function () {
-                        const formId = $(this).data("id");
-                        const row = $(this).closest("tr");
-
-                        if (confirm("Do you really want to delete this student?")) {
-                            $.post('/Form/FormDelete', { id: formId }, function (response) {
-                                alert(response.message);
-                                if (response.success) {
-                                    row.remove();
-                                }
-                            });
-                        }
-                    });
-
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+      
+    <script src="~/js/delete-form.js" asp-append-version="true"></script>
+    <script>
+        $(function(){
+            FormList.init();
+        });
+    </script>
     
- </script>
+
+ }
 

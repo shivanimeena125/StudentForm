@@ -121,7 +121,7 @@ namespace Formio.Areas.Identity.Pages.Account
                     var roles = await _signInManager.UserManager.GetRolesAsync(user);
                     if (roles.Contains("Admin") )
                     {
-                        return LocalRedirect("/Admin/Form/Builder");
+                        return LocalRedirect("/Admin/Form/AddForms");
 
                     }
                     else if (roles.Contains("User"))

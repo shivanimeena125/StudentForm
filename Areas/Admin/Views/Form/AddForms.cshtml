@@ -1,0 +1,49 @@
+﻿@model Formio.Models.Forms
+
+@{
+    ViewData["Title"] = "Form Builder";
+    var Jsonform = Model?.FormFields ?? "{}";
+    bool isEdit = Model?.Id > 0;
+    var isModelNull = (Model == null).ToString().ToLower(); 
+
+} 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+<script src="https://cdn.form.io/js/formio.embed.js"></script>
+
+
+<div class="container mt-5">
+    <h3 class="mb-4 text-primary">Design Your Form</h3>
+
+    <form id="saveForm" class="mt-4">
+
+        <div class="form-group mb-4">
+            <input type="text" id="title" placeholder="Enter form title" class="form-control" value="@(Model?.Title ?? "")" />
+    </div>
+
+        <div id="FormBuilder" class="border rounded bg-light p-3" ></div>
+        <input type="hidden" id="formId" value="@Model?.Id" />
+
+        <input type="hidden" id="jsonSchema" class="form-control" value="@(Model?.FormFields ?? "")" />
+       
+        <button class="btn btn-success btn-lg" type="submit">
+           
+            <i class="bi bi-save"></i> @(isEdit ? "Update Form" : "Save Form")
+        </button>
+        <input type="hidden" id="formJsonString" value='@Html.Raw(Jsonform)' />
+        <input type="hidden" id="isModelNull" value='@Html.Raw(isModelNull)' />
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/Add-Edit-form.js" asp-append-version="true"></script>
+   
+    <script>
+        $(function(){
+            AddEditPage.init();
+        })
+    </script>
+}
+

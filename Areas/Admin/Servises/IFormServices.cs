@@ -4,13 +4,13 @@ namespace Formio.Areas.Admin.Servises
 {
     public interface IFormServices
     {
-        Task AddForm(Forms form);
-        Task<List<ViewFormModel>> AllForms();
+        Task AddFormAsync(Forms form);
+        Task<List<ViewFormModel>> ViewFormsAsync();
 
-        Task<Forms?> GetFormById(int id);
+        Task<Forms> GetFormByIdAsync(int id);
 
-        Task<int> DeleteForm(int id);
+        Task<int> DeleteFormAsync(int id);
 
-        Task UpdateForm(Forms form);
+        Task UpdateFormAsync(Forms form);
     }
 }
