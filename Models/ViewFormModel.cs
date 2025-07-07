@@ -8,5 +8,9 @@
         public DateTime CreatedUtc { get; set; }
 
         public DateTime? ModifiedUtc { get; set; }  
+
+        public Guid FormGroupId { get; set; }
+
+        public Guid VersionId { get; set; }   
     }
 }

@@ -1,6 +1,6 @@
 ﻿
 
-var FormList = {
+var deleteForm = {
     init: function () {
         this.DeleteButton();
     },

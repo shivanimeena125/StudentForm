@@ -47,18 +47,15 @@
                 },
                 success: function (response) {
                     if (response.success) {
-                        alert(response.message);
-                    }
-                    else {
-                        if (response.redirect) {
-                            window.location.href = response.redirect;
-                            return;
-                        } else {
-                            alert(response.message);
-                        }
-                    }
+                    alert(response.message);
 
-                },
+                    if (response.redirectUrl) {
+                        window.location.href = response.redirectUrl;
+                    }
+                } else {
+                    alert(response.message);
+                }
+            },
                 error: function (xhr, status, result) {
                     if (xhr.status === 401) {
                         alert("You are not authorized to perform this action. Please log in first.");

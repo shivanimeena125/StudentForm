@@ -1,10 +1,11 @@
-﻿using Formio.Areas.Admin.Servises;
+﻿using Formio.Areas.Admin.Services;
 using Formio.Areas.Identity.Data;
 using Formio.Models;
 using Microsoft.AspNetCore.Authorization;
 
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 
 
@@ -13,14 +14,18 @@ namespace Formio.Areas.Admin.Controllers
     
     public class FormController : Controller
     {
-        private readonly IFormServices _formServices;
+        private readonly IFormService _formServices;
         private readonly UserManager<ApplicationUser> _userManager;
 
-        public FormController(UserManager<ApplicationUser> userManager, IFormServices formServices)
+        public FormController(UserManager<ApplicationUser> userManager, IFormService formServices)
         {
             _userManager = userManager;
             _formServices = formServices;
         }
+
+
+        [Authorize(Roles ="Admin")]
+       [HttpGet]
         public async Task<IActionResult> AddForms()
         {
           
@@ -28,77 +33,43 @@ namespace Formio.Areas.Admin.Controllers
          
            return View("~/Areas/Admin/views/Form/AddForms.cshtml", model);
         }
-        [Authorize]
+
+
+
+
+       
         [HttpPost]
-        public async Task<JsonResult> AddForms(Forms model)
+        public async Task<JsonResult> AddForms(Forms model, ClaimsPrincipal userPrincipal)
         {
-            if (!User.Identity.IsAuthenticated)
-            {
-
-                return Json(new
-                {
-                    success = false,
-                    message = "User is not logged in.",
-                    redirectUrl = Url.Action("Identity/Account/login")
-                });
-            }
-            var user = await _userManager.GetUserAsync(User);
-            if (user == null)
-            {
-
-                return Json(new { success = false, message = "User not found." });
-            }
-            model.CreatedBy = user.Id;
-            model.Latest = true;
-            model.CreatedUtc = DateTime.UtcNow;
-            model.VersionId = Guid.NewGuid();
-            model.FormGroupId = Guid.NewGuid();
-
-            ModelState.Remove(nameof(model.CreatedBy));
-
-            foreach (var modelState in ViewData.ModelState)
-            {
-                var key = modelState.Key;
-                var errors = modelState.Value.Errors;
-                foreach (var error in errors)
-                {
-                    Console.WriteLine($"Property: {key}, Error: {error.ErrorMessage}");
-                }
-            }
-
-            if (ModelState.IsValid)
-            {
-
-              await _formServices.AddFormAsync(model);
-
-
-                return Json(new { success = true, message = "Form created successfully." });
-            }
-
-
-            return Json(new { success = false, message = "Validation failed" });
+            return await _formServices.AddFormAsync(model, User);
         }
 
-
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> ViewAllForms()
         {
             var forms = await _formServices.ViewFormsAsync();
             return View("~/Areas/Admin/Views/Form/ViewAllForms.cshtml", forms);
-
-
-
         }
-        public async Task<IActionResult> ViewForm(int id)
+
+
+
+
+        public async Task<IActionResult> ViewForm(Guid formGroupId)
         {
-            var form = await _formServices.GetFormByIdAsync(id);
+           
+            var form = await _formServices.GetFormByFormGroupId(formGroupId);
+
             if (form == null)
-            {
                 return NotFound();
-            }
+
             return View("~/Areas/Admin/Views/Form/ViewForm.cshtml", form);
 
         }
+
+
+
+
         [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<JsonResult> DeleteForm(int id)
@@ -107,23 +78,19 @@ namespace Formio.Areas.Admin.Controllers
             {
                 return Json(new { success = true, message = "Form not found." });
             }
-            int result = await _formServices.DeleteFormAsync(id);
 
-            if (result > 0)
-            {
-                return Json(new { success = true, message = "Form deleted successfully." });
-            }
-            else
-            {
-                return Json(new { success = false, message = "Form not found." });
-            }
+            return await _formServices.DeleteFormAsync(id);
+
+           
         }
+
+
 
         [Authorize(Roles = "Admin")]
         [HttpGet]
-        public async Task<IActionResult> UpdateForm(int id)
+        public async Task<IActionResult> UpdateForm(Guid formGroupId)
         {
-            var form = await _formServices.GetFormByIdAsync(id);
+            var form = await _formServices.GetFormByFormGroupId(formGroupId);
             if (form == null)
             {
                 return NotFound();
@@ -131,53 +98,27 @@ namespace Formio.Areas.Admin.Controllers
             return View("~/Areas/Admin/Views/Form/AddForms.cshtml", form);
         }
 
-        [Authorize]
+
+
+        [Authorize(Roles ="Admin")]
         [HttpPost]
         public async Task<JsonResult> UpdateForm(Forms model)
         {
-            if (!User.Identity.IsAuthenticated)
-            {
-                return Json(new { success = false, message = "User is not logged in." });
-            }
-            var user = await _userManager.GetUserAsync(User);
-            if (user == null)
-            {
-                return Json(new { success = false, message = "User not found." });
-            }
-
-            var existingForm = await _formServices.GetFormByIdAsync(model.Id);
-            if (existingForm == null)
-            {
-                return Json(new { success = false, message = "Form not found." });
-            }
-            existingForm.Latest= false;
-            await _formServices.UpdateFormAsync(existingForm);
-
-            model.CreatedBy = existingForm.CreatedBy; 
-            model.VersionId = Guid.NewGuid();
-            model.CreatedUtc = existingForm.CreatedUtc; 
-            model.FormGroupId = existingForm.FormGroupId;
-            model.ModifiedBy = user.Id;
-            model.Latest = true;
-            model.ModifiedUtc = DateTime.UtcNow;
-            ModelState.Remove(nameof(model.ModifiedBy));
             ModelState.Remove(nameof(model.CreatedBy));
-            foreach (var modelState in ViewData.ModelState)
+           
+            if (!ModelState.IsValid)
             {
-                var key = modelState.Key;
-                var errors = modelState.Value.Errors;
-                foreach (var error in errors)
-                {
-                    Console.WriteLine($"Property: {key}, Error: {error.ErrorMessage}");
-                }
+                return Json(new { success = false, message = "Validation failed." });
             }
-            if (ModelState.IsValid)
-            {
-                await _formServices.AddFormAsync(model);
-                return Json(new { success = true, message = "Form updated successfully." });
-            }
-            return Json(new { success = false, message = "Validation failed" });
 
+            return await _formServices.UpdateFormAsync(model, User);
+
+           
         }
+
+
+
+
+       
     }
-    }
+}

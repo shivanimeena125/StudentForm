@@ -1,8 +1,8 @@
 using Formio.Areas.Admin.Repository;
 using Formio.Areas.Identity.Data;
-using Formio.Areas.Admin.Servises;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Formio.Areas.Admin.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,7 +20,10 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
     .AddDefaultTokenProviders()
     .AddDefaultUI();
 
-builder.Services.AddTransient<IFormServices, FormRepository>();
+builder.Services.AddTransient<IFromRepository, FormRepository>();
+builder.Services.AddTransient<IFormService, FormService>();
+
+
 
 var app = builder.Build();
 

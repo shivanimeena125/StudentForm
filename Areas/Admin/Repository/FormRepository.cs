@@ -3,11 +3,11 @@ using Formio.Models;
 using Microsoft.Data.SqlClient;
 using Dapper;
 
-using Formio.Areas.Admin.Servises;
+using Formio.Areas.Admin.Services;
 
 namespace Formio.Areas.Admin.Repository
 {
-    public class FormRepository : IFormServices
+    public class FormRepository : IFromRepository
     {
 
         private readonly string _connectionString;
@@ -29,7 +29,7 @@ namespace Formio.Areas.Admin.Repository
 
         }
 
-        public async Task<List<ViewFormModel>> ViewFormsAsync(string title)
+        public async Task<List<ViewFormModel>> ViewFormsAsync()
         {
             using var connection = new SqlConnection(_connectionString);
             string query = @"
@@ -38,11 +38,15 @@ namespace Formio.Areas.Admin.Repository
             Forms.Title, 
             Forms.CreatedUtc, 
             Forms.ModifiedUtc,
+ Forms.FormGroupId,
+        Forms.VersionId,
             AspNetUsers.Name AS CreatedByName
         FROM 
             Forms 
         INNER JOIN 
             AspNetUsers  ON Forms.CreatedBy = AspNetUsers.Id where Forms.Latest=1 Order By Forms.ModifiedUtc DESC";
+
+
             return (await connection.QueryAsync<ViewFormModel>(query)).ToList();
 
         }
@@ -58,7 +62,7 @@ namespace Formio.Areas.Admin.Repository
         {
             using var connection = new SqlConnection(_connectionString);
             string query = "DELETE FROM Forms WHERE Id = @Id";
-           return await connection.ExecuteAsync(query, new { Id = id });
+            return await connection.ExecuteAsync(query, new { Id = id });
         }
 
         public async Task UpdateFormAsync(Forms form)
@@ -71,8 +75,19 @@ namespace Formio.Areas.Admin.Repository
                     ModifiedBy = @ModifiedBy, 
                     ModifiedUtc = @ModifiedUtc, 
                     FormFields = @FormFields
-                WHERE Id = @Id";
+                WHERE FormGroupId= @FormGroupId";
+
             await connection.ExecuteAsync(query, form);
         }
+
+        public async Task<Forms> GetFormByFormGroupId(Guid formGroupId)
+        {
+            using var connection = new SqlConnection(_connectionString);
+            string query = "SELECT * FROM Forms WHERE FormGroupId = @FormGroupId And Latest=1";
+            return await connection.QueryFirstOrDefaultAsync<Forms>(query, new { FormGroupId = formGroupId });
+        }
+
+
+
     }
 }

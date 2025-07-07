@@ -1,5 +1,7 @@
+wwwroot\css\onlineForm.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\js\Add-Edit-form.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -62,8 +64,10 @@ wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
 wwwroot\js\delete-form.js
-wwwroot\js\Add-Edit-form.js
+C:\Users\Admin\Desktop\Shivani\FormIO\wwwroot\css\onlineForm.css
+C:\Users\Admin\Desktop\Shivani\FormIO\wwwroot\css\site.css
 C:\Users\Admin\Desktop\Shivani\FormIO\wwwroot\favicon.ico
+C:\Users\Admin\Desktop\Shivani\FormIO\wwwroot\js\Add-Edit-form.js
 C:\Users\Admin\Desktop\Shivani\FormIO\wwwroot\js\site.js
 C:\Users\Admin\Desktop\Shivani\FormIO\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 C:\Users\Admin\Desktop\Shivani\FormIO\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -125,5 +129,3 @@ C:\Users\Admin\Desktop\Shivani\FormIO\wwwroot\lib\jquery\dist\jquery.slim.min.js
 C:\Users\Admin\Desktop\Shivani\FormIO\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\Admin\Desktop\Shivani\FormIO\wwwroot\lib\jquery\LICENSE.txt
 C:\Users\Admin\Desktop\Shivani\FormIO\wwwroot\js\delete-form.js
-C:\Users\Admin\Desktop\Shivani\FormIO\wwwroot\css\site.css
-C:\Users\Admin\Desktop\Shivani\FormIO\wwwroot\js\Add-Edit-form.js

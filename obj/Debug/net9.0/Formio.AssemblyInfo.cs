@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Formio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b74760ac2f955c9a041b22f3f0cdb4f6a92d7e73")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99b15df7556c0b57e4d690cb354b844ce7a09e66")]
 [assembly: System.Reflection.AssemblyProductAttribute("Formio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Formio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
