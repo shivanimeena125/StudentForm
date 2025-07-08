@@ -3,6 +3,7 @@ using Formio.Areas.Identity.Data;
 using Formio.Areas.Admin.Servises;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Formio.Areas.Admin.Initializar;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,7 +23,16 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 
 builder.Services.AddTransient<IFormServices, FormRepository>();
 
+
+
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    await RoleInitializar.RoleInitializarAsync(services);
+}
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -59,19 +69,7 @@ app.UseEndpoints(endpoints =>
 app.MapRazorPages()
    .WithStaticAssets();
 
-using (var scope = app.Services.CreateScope())
-{
-    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-    string[] roles = { "Admin", "User", "Editor" };
 
-    foreach (var role in roles)
-    {
-        var exists = await roleManager.RoleExistsAsync(role);
-        if (!exists)
-        {
-            await roleManager.CreateAsync(new IdentityRole(role));
-        }
-    }
-}
+    
 
 app.Run();

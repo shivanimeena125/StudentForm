@@ -89,6 +89,7 @@ namespace Formio.Areas.Admin.Controllers
 
 
         }
+        [HttpPost]
         public async Task<IActionResult> ViewForm(int id)
         {
             var form = await _formServices.GetFormByIdAsync(id);
@@ -99,6 +100,21 @@ namespace Formio.Areas.Admin.Controllers
             return View("~/Areas/Admin/Views/Form/ViewForm.cshtml", form);
 
         }
+
+        [HttpGet]
+        public async Task<IActionResult> ViewFormByGroupId(Guid formGroupId)
+        {
+            var form = await _formServices.GetFormByFromGroupId(formGroupId); 
+            if (form == null)
+            {
+                return NotFound();
+            }
+
+            return View("~/Areas/Admin/Views/Form/ViewForm.cshtml", form); 
+        }
+
+
+
         [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<JsonResult> DeleteForm(int id)

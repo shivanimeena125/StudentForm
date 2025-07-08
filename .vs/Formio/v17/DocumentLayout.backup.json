@@ -1,134 +1,66 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\",
+  "WorkspaceRootPath": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\areas\\admin\\repository\\formrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\repository\\formrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\areas\\admin\\views\\form\\viewallforms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\views\\form\\viewallforms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\views\\form\\viewallforms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\areas\\admin\\views\\form\\viewform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\views\\form\\viewform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\areas\\admin\\views\\form\\addforms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\views\\form\\addforms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\areas\\admin\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\areas\\identity\\pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\identity\\pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\wwwroot\\js\\add-edit-form.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:wwwroot\\js\\add-edit-form.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\wwwroot\\js\\delete-form.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:wwwroot\\js\\delete-form.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\areas\\admin\\controllers\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\controllers\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\controllers\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\repository\\formrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\repository\\formrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\areas\\admin\\servises\\iformservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\servises\\iformservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\servises\\iformservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\models\\viewformmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:models\\viewformmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\models\\forms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:models\\forms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\views\\home\\onlineforms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\views\\home\\onlineforms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:views\\home\\onlineforms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\initializar\\roleinitializar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\initializar\\roleinitializar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\views\\form\\viewform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\views\\form\\viewform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\migrations\\20250701122312_initialidentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:migrations\\20250701122312_initialidentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\views\\form\\addforms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\views\\form\\addforms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\migrations\\20250703075936_addformioidtoforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:migrations\\20250703075936_addformioidtoforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\models\\viewformmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:models\\viewformmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\models\\forms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:models\\forms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\areas\\identity\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\identity\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\identity\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\admin\\desktop\\shivani\\formio\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\migrations\\20250704181744_createformstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:migrations\\20250704181744_createformstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -138,416 +70,188 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-04T13:32:52.488Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Admin\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Admin\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-04T13:32:17.468Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Add-Edit-form.js",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\wwwroot\\js\\Add-Edit-form.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\Add-Edit-form.js",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\wwwroot\\js\\Add-Edit-form.js",
-              "RelativeToolTip": "wwwroot\\js\\Add-Edit-form.js",
-              "ViewState": "AgIAADMAAAAAAAAAAAAkwE4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-07-04T12:33:44.218Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "site.js",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\wwwroot\\js\\site.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\wwwroot\\js\\site.js",
-              "RelativeToolTip": "wwwroot\\js\\site.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-07-04T11:54:19.425Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Title": "OnlineForms.cshtml",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Views\\Home\\OnlineForms.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\OnlineForms.cshtml",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Views\\Home\\OnlineForms.cshtml",
+              "RelativeToolTip": "Views\\Home\\OnlineForms.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-04T10:04:10.345Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-07T03:01:28.745Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AddForms.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Admin\\Views\\Form\\AddForms.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Form\\AddForms.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Admin\\Views\\Form\\AddForms.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Form\\AddForms.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T12:53:34.982Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ViewAllForms.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Admin\\Views\\Form\\ViewAllForms.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Form\\ViewAllForms.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Admin\\Views\\Form\\ViewAllForms.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Form\\ViewAllForms.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T09:39:34.69Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ViewForm.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Admin\\Views\\Form\\ViewForm.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Form\\ViewForm.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Admin\\Views\\Form\\ViewForm.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Form\\ViewForm.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T12:53:05.972Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Admin\\Repository\\FormRepository.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Repository\\FormRepository.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Admin\\Repository\\FormRepository.cs*",
-              "RelativeToolTip": "Areas\\Admin\\Repository\\FormRepository.cs*",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowCcAAAAeAAAAAAAAAA==",
+              "Title": "IFormServices.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Servises\\IFormServices.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Servises\\IFormServices.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Servises\\IFormServices.cs",
+              "RelativeToolTip": "Areas\\Admin\\Servises\\IFormServices.cs",
+              "ViewState": "AgIAAAkAAACYmJmZmZk4wA8AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T12:50:15.821Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Login.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIEAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T13:57:43.378Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "20250701122312_InitialIdentity.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Migrations\\20250701122312_InitialIdentity.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250701122312_InitialIdentity.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Migrations\\20250701122312_InitialIdentity.cs",
-              "RelativeToolTip": "Migrations\\20250701122312_InitialIdentity.cs",
-              "ViewState": "AgIAAKwAAAAAAAAAAAAgwAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T12:23:12.597Z"
+              "WhenOpened": "2025-07-05T19:20:17.515Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Admin\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Admin\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Title": "ViewForm.cshtml",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Views\\Form\\ViewForm.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Form\\ViewForm.cshtml",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Views\\Form\\ViewForm.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Form\\ViewForm.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T09:31:52.734Z",
+              "WhenOpened": "2025-07-05T19:15:12.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ViewAllForms.cshtml",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Views\\Form\\ViewAllForms.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Form\\ViewAllForms.cshtml",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Views\\Form\\ViewAllForms.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Form\\ViewAllForms.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-05T19:01:02.454Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "delete-form.js",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\wwwroot\\js\\delete-form.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\delete-form.js",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\wwwroot\\js\\delete-form.js",
-              "RelativeToolTip": "wwwroot\\js\\delete-form.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-07-04T10:13:58.382Z",
-              "EditorCaption": ""
+              "Title": "Forms.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Models\\Forms.cs",
+              "RelativeDocumentMoniker": "Models\\Forms.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Models\\Forms.cs",
+              "RelativeToolTip": "Models\\Forms.cs",
+              "ViewState": "AgIAAA0AAADQ/v////80wBwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T19:00:31.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ViewFormModel.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Models\\ViewFormModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewFormModel.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Models\\ViewFormModel.cs",
+              "RelativeToolTip": "Models\\ViewFormModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T18:59:47.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddForms.cshtml",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Views\\Form\\AddForms.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Form\\AddForms.cshtml",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Views\\Form\\AddForms.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Form\\AddForms.cshtml",
+              "ViewState": "AgIAAAwAAABgZGZmZmYkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-05T18:59:31.894Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "FormController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Admin\\Controllers\\FormController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\FormController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Admin\\Controllers\\FormController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\FormController.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAwwGsAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T08:05:05.238Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABcAAABpAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T08:15:31.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T18:49:54.244Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "FormController.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Controllers\\FormController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\FormController.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Controllers\\FormController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\FormController.cs",
+              "ViewState": "AgIAAGIAAACAc2ZmZmYiwGgAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T12:30:12.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-04T18:50:57.67Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ViewFormModel.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Models\\ViewFormModel.cs",
-              "RelativeDocumentMoniker": "Models\\ViewFormModel.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Models\\ViewFormModel.cs",
-              "RelativeToolTip": "Models\\ViewFormModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "RoleInitializar.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Initializar\\RoleInitializar.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Initializar\\RoleInitializar.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Initializar\\RoleInitializar.cs",
+              "RelativeToolTip": "Areas\\Admin\\Initializar\\RoleInitializar.cs",
+              "ViewState": "AgIAAAQAAAAALzMzMzMLwAQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T04:30:20.573Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-04T18:28:24.055Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "IFormServices.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Admin\\Servises\\IFormServices.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Servises\\IFormServices.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Admin\\Servises\\IFormServices.cs",
-              "RelativeToolTip": "Areas\\Admin\\Servises\\IFormServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T14:29:39.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Logout.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwBQAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T13:58:38.48Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAwDoAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T10:59:19.705Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-04T08:06:59.808Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Register.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAcwLUAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T13:46:48.21Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Forms.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Models\\Forms.cs",
-              "RelativeDocumentMoniker": "Models\\Forms.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Models\\Forms.cs",
-              "RelativeToolTip": "Models\\Forms.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBwAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T08:08:36.362Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T12:03:17.566Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAABwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T05:28:52.297Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "OnlineForms.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Views\\Home\\OnlineForms.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\OnlineForms.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Views\\Home\\OnlineForms.cshtml",
-              "RelativeToolTip": "Views\\Home\\OnlineForms.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T12:29:11.113Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "20250703075936_AddFormioIdToForms.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Migrations\\20250703075936_AddFormioIdToForms.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250703075936_AddFormioIdToForms.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Migrations\\20250703075936_AddFormioIdToForms.cs",
-              "RelativeToolTip": "Migrations\\20250703075936_AddFormioIdToForms.cs",
+              "Title": "20250704181744_CreateFormsTable.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Migrations\\20250704181744_CreateFormsTable.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250704181744_CreateFormsTable.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Migrations\\20250704181744_CreateFormsTable.cs",
+              "RelativeToolTip": "Migrations\\20250704181744_CreateFormsTable.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T07:59:37.05Z"
+              "WhenOpened": "2025-07-04T18:17:44.346Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T09:35:23.784Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 12,
               "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Identity\\Data\\ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Identity\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\Areas\\Identity\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Identity\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "Areas\\Identity\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAkwCAAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T11:01:25.263Z"
+              "WhenOpened": "2025-07-04T18:16:57.041Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 13,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\appsettings.json",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-01T11:19:17.95Z"
+              "WhenOpened": "2025-07-04T18:13:07.181Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "ScaffoldingReadMe.txt",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\ScaffoldingReadMe.txt",
-              "RelativeDocumentMoniker": "ScaffoldingReadMe.txt",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\ScaffoldingReadMe.txt",
-              "RelativeToolTip": "ScaffoldingReadMe.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-07-01T11:17:54.808Z"
+              "DocumentIndex": 2,
+              "Title": "FormRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Repository\\FormRepository.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Repository\\FormRepository.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Repository\\FormRepository.cs",
+              "RelativeToolTip": "Areas\\Admin\\Repository\\FormRepository.cs",
+              "ViewState": "AgIAAEkAAADAKjMzMzMlwFYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T18:07:31.384Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Shivani\\FormIO\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-07-01T10:34:11.554Z"
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T18:04:48.418Z"
             }
           ]
         }

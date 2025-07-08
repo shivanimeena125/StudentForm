@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-Formio-93ed25e4-ed73-4881-afcb-8f33900921bf")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Formio")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99b15df7556c0b57e4d690cb354b844ce7a09e66")]
 [assembly: System.Reflection.AssemblyProductAttribute("Formio")]

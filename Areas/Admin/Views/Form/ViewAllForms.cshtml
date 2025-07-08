@@ -33,7 +33,8 @@
                     
                         <td>
 
-                        <a id="ViewBtn" class="btn btn-secondary m-2" asp-controller="Form" asp-action="ViewForm" asp-route-id="@form.Id">View</a>
+                        @* <a id="ViewBtn" class="btn btn-secondary m-2" asp-controller="Form" asp-action="ViewForm" asp-route-id="@form.Id">View</a> *@
+                        <a id="ViewBtn" class="btn btn-secondary m-2" asp-controller="Form" asp-action="ViewFormByGroupId" asp-route-id="@form.FormGroupId">View</a>
 
                         <a id="EditBtn" class="btn btn-warning m-2" asp-controller="Form" asp-action="UpdateForm" asp-route-id="@form.Id">Edit</a>
                         <button  type="submit" class="btn btn-danger deleteBtn m-2" data-id="@form.Id">Delete</button>

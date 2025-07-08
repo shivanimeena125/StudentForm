@@ -12,5 +12,9 @@ namespace Formio.Areas.Admin.Servises
         Task<int> DeleteFormAsync(int id);
 
         Task UpdateFormAsync(Forms form);
+
+        Task<Forms> GetFormByFromGroupId(Guid formGroupId);
+
+
     }
 }

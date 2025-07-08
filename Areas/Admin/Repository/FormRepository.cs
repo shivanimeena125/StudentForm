@@ -29,7 +29,7 @@ namespace Formio.Areas.Admin.Repository
 
         }
 
-        public async Task<List<ViewFormModel>> ViewFormsAsync(string title)
+        public async Task<List<ViewFormModel>> ViewFormsAsync()
         {
             using var connection = new SqlConnection(_connectionString);
             string query = @"
@@ -51,6 +51,7 @@ namespace Formio.Areas.Admin.Repository
         {
             using var connection = new SqlConnection(_connectionString);
             string query = "SELECT * FROM Forms WHERE Id = @Id";
+           
             return await connection.QueryFirstOrDefaultAsync<Forms>(query, new { Id = id });
         }
 
@@ -73,6 +74,14 @@ namespace Formio.Areas.Admin.Repository
                     FormFields = @FormFields
                 WHERE Id = @Id";
             await connection.ExecuteAsync(query, form);
+        }
+
+        public async Task<Forms> GetFormByFromGroupId(Guid formGroupId)
+        {
+            using var connection = new SqlConnection(_connectionString);
+            string query = "SELECT * FROM Forms WHERE FormGroupId = @FormGroupId";
+
+            return await connection.QueryFirstOrDefaultAsync<Forms>(query, new { FormGroupId = formGroupId });
         }
     }
 }
