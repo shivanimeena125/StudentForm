@@ -3,14 +3,33 @@
 @{
     ViewData["Title"] = "Form List";
 }
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
 
 <div class="container mt-4">
     <h2 class="mb-4 text-primary">Online Forms</h2>
-    <div>
+    @*<div>
         <input type="text" id="searchInput" name="Title" class="form-control mb-3" placeholder="Search by title..." />
+    </div>*@
+    <div class="row mb-3">
+        <div class="col-md-3">
+            <label>Start Date</label>
+            <input type="date" id="startDate" class="form-control" />
+        </div>
+        <div class="col-md-3">
+            <label>End Date</label>
+            <input type="date" id="endDate" class="form-control" />
+        </div>
+        <div class="col-md-2 d-flex align-items-end">
+            <button id="filterBtn" class="btn btn-primary me-2">Filter</button>
+            <button id="resetBtn" class="btn btn-secondary">Reset</button>
+        </div>
     </div>
-        <table class="table table-bordered table-striped">
-            <thead class="table-dark">
+
+
+        <table class="table table-bordered table-striped" id="formTable">
+            <thead class="table-danger">
                 <tr>
                     <th>Title</th>
                     <th>Created By</th>
@@ -32,11 +51,12 @@
                         </td>
                     
                         <td>
-
                         @* <a id="ViewBtn" class="btn btn-secondary m-2" asp-controller="Form" asp-action="ViewForm" asp-route-id="@form.Id">View</a> *@
-                        <a id="ViewBtn" class="btn btn-secondary m-2" asp-controller="Form" asp-action="ViewFormByGroupId" asp-route-id="@form.FormGroupId">View</a>
+                        @* <a id="ViewBtn" class="btn btn-secondary m-2" asp-controller="Form" asp-action="ViewFormByGroupId" asp-route-id="@form.FormGroupId">View</a> *@
+                        <a id="ViewBtn" class="btn btn-secondary m-2" asp-controller="Form" asp-action="ViewForm" asp-route-formGroupId="@form.FormGroupId">View</a>
 
-                        <a id="EditBtn" class="btn btn-warning m-2" asp-controller="Form" asp-action="UpdateForm" asp-route-id="@form.Id">Edit</a>
+
+                        <a id="EditBtn" class="btn btn-warning m-2" asp-controller="Form" asp-action="UpdateForm" asp-route-formGroupId="@form.FormGroupId">Edit</a>
                         <button  type="submit" class="btn btn-danger deleteBtn m-2" data-id="@form.Id">Delete</button>
 
                         </td>
@@ -49,12 +69,90 @@
 
 @section Scripts{
     <partial name="_ValidationScriptsPartial" />
-      
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script src="~/js/delete-form.js" asp-append-version="true"></script>
     <script>
         $(function(){
-            FormList.init();
+            deleteForm.init();
         });
+
+              <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <style>
+        /* Default sort icon (gray) */
+        table.dataTable thead th.sorting:after,
+        table.dataTable thead th.sorting:before {
+            color: #007bff; /* Blue for unselected too */
+        }
+
+        /* Ascending arrow (blue) */
+        table.dataTable thead th.sorting_asc:after,
+        table.dataTable thead th.sorting_asc:before {
+            color: #007bff !important;
+        }
+
+        /* Descending arrow (blue) */
+        table.dataTable thead th.sorting_desc:after,
+        table.dataTable thead th.sorting_desc:before {
+            color: #007bff !important;
+        }
+    </style>
+
+
+    <script>
+
+
+            $(document).ready(function () {
+            var table = $('#formTable').DataTable({
+                "pageLength": 10,
+                "lengthMenu": [2, 5, 10, 20, 50],
+                "order": [[2, "desc"]],
+                "language": {
+                    "search": "Search Title / Created By:",
+                    "lengthMenu": "Show _MENU_ entries",
+                    "zeroRecords": "No matching records found",
+                    "info": "Showing _START_ to _END_ of _TOTAL_ entries",
+                    "infoEmpty": "No entries available",
+                    "infoFiltered": "(filtered from _MAX_ total entries)"
+                }
+            });
+
+            // 🔎 Custom Date Range Filter Logic
+            $.fn.dataTable.ext.search.push(function (settings, data, dataIndex) {
+                const startDate = $('#startDate').val();
+                const endDate = $('#endDate').val();
+                const createdDate = data[2]; // 3rd column index (Created Date)
+
+                if (!startDate && !endDate) return true;
+
+                const created = new Date(createdDate);
+                const start = startDate ? new Date(startDate) : null;
+                const end = endDate ? new Date(endDate) : null;
+
+                if ((start == null || created >= start) &&
+                    (end == null || created <= end)) {
+                    return true;
+                }
+
+                return false;
+            });
+
+            // 📅 Filter button click
+            $('#filterBtn').on('click', function () {
+                table.draw(); // Redraw table with filtered data
+            });
+
+            // 🔁 Reset button
+            $('#resetBtn').on('click', function () {
+                $('#startDate').val('');
+                $('#endDate').val('');
+                table.search('').columns().search('').draw(); // Reset all filters
+            });
+        });
+       
+    </script>
+
     </script>
     
 

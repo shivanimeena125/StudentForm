@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\views\\form\\viewallforms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\views\\form\\viewallforms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -66,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
@@ -78,18 +78,17 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "ViewState": "AgIAAA0AAAAAAAAAAABgPRIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-08T20:01:09.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-08T20:01:09.211Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-08T19:03:56.574Z",
               "EditorCaption": ""
@@ -104,8 +103,7 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAACgAAABAKzMzMzMrwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-08T19:03:36.769Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-08T19:03:36.769Z"
             },
             {
               "$type": "Document",
@@ -117,8 +115,7 @@
               "RelativeToolTip": "Models\\ViewFormModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T19:01:57.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-08T19:01:57.642Z"
             },
             {
               "$type": "Document",
@@ -128,10 +125,9 @@
               "RelativeDocumentMoniker": "wwwroot\\js\\delete-form.js",
               "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\wwwroot\\js\\delete-form.js",
               "RelativeToolTip": "wwwroot\\js\\delete-form.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-07-08T18:55:26.285Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-08T18:55:26.285Z"
             },
             {
               "$type": "Document",
@@ -141,10 +137,9 @@
               "RelativeDocumentMoniker": "wwwroot\\js\\Add-Edit-form.js",
               "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\wwwroot\\js\\Add-Edit-form.js",
               "RelativeToolTip": "wwwroot\\js\\Add-Edit-form.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-07-08T18:55:22.259Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-08T18:55:22.259Z"
             },
             {
               "$type": "Document",
@@ -156,18 +151,17 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\Form\\ViewForm.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-08T18:55:16.493Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-08T18:55:16.493Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ViewAllForms.cshtml",
               "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Views\\Form\\ViewAllForms.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Form\\ViewAllForms.cshtml",
-              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Views\\Form\\ViewAllForms.cshtml*",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Form\\ViewAllForms.cshtml*",
-              "ViewState": "AgIAAEEAAACAKzMzMzMrwDEAAABzAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Views\\Form\\ViewAllForms.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Form\\ViewAllForms.cshtml",
+              "ViewState": "AgIAABEAAAAAPTMzMzMXwB8AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-08T18:53:17.815Z",
               "EditorCaption": ""
@@ -182,8 +176,7 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\Form\\AddForms.cshtml",
               "ViewState": "AgIAAAUAAADgODMzMzMXwBYAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-08T18:52:53.848Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-08T18:52:53.848Z"
             },
             {
               "$type": "Document",
@@ -195,8 +188,7 @@
               "RelativeToolTip": "Areas\\Admin\\Controllers\\FormController.cs",
               "ViewState": "AgIAAJIAAAAA0mZmZmYNwHIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T18:49:02.117Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-08T18:49:02.117Z"
             },
             {
               "$type": "Document",
@@ -208,8 +200,7 @@
               "RelativeToolTip": "Areas\\Identity\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAB0AAAAAYGZmZmYawA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T18:16:57.041Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-04T18:16:57.041Z"
             },
             {
               "$type": "Document",
@@ -233,8 +224,7 @@
               "RelativeToolTip": "Areas\\Admin\\Repository\\FormRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T18:07:31.384Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-04T18:07:31.384Z"
             },
             {
               "$type": "Document",
@@ -246,8 +236,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAEYAAAAAMDMzMzMrwEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T18:04:48.418Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-04T18:04:48.418Z"
             }
           ]
         }
