@@ -3,6 +3,7 @@ using Formio.Areas.Identity.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Formio.Areas.Admin.Services;
+using Formio.Areas.Admin.Connection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +23,10 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 
 builder.Services.AddTransient<IFromRepository, FormRepository>();
 builder.Services.AddTransient<IFormService, FormService>();
+
+builder.Services.AddTransient<ISubmissionService, SubmissionService>();
+builder.Services.AddTransient<ISubmissionRepository, SubmissionRepository>();
+builder.Services.AddSingleton<IConnectionFactory, ConnectionFactory>();
 
 
 
@@ -50,13 +55,20 @@ app.MapStaticAssets();
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllerRoute(
+     name: "Areas",
+     pattern: "{area:exists}/{controller}/{action}/{id?}");
+
+
+    endpoints.MapControllerRoute(
           name: "default",
           pattern: "{controller=Home}/{action=Index}/{id?}");
 
     endpoints.MapControllerRoute(
         name: "Admin",
-      
-        pattern: "Admin/{controller=Form}/{action=ViewAllForms}/{id?}");
+        pattern: "Admin/{controller=Form}/{action=ViewAllForms}/{formGroupId?}");
+
+    
+
 });
 
 app.MapRazorPages()
