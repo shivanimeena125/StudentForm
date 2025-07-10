@@ -1,5 +1,4 @@
 ﻿@model Formio.Models.Forms
-
 @{
     ViewData["Title"] = "Form render";
 }
@@ -13,39 +12,13 @@
     <h3>@Model.Title</h3>
 
     <div id="formioRender" class="border rounded bg-light p-3"></div>
-   
+    
+    <script src="~/js/formio-render.js" asp-append-version="true"></script>
     <script>
-        debugger
-             $(document).ready(function(){
-            Formio.createForm(document.getElementById('formioRender'), @Html.Raw(Model.FormFields))
-                .then(function (form) {
-                    form.on('submit', function (submission) {
-                        console.log('Form submitted:', submission.data);
+        const formId = @Model.Id;
+        const formJson = @Html.Raw(Model.FormFields);
+        const isAdmin = "@User.IsInRole("Admin").ToString().ToLower()";
 
-                        $.ajax({
-                            url: '/Admin/Submission/FormSubmissionAsync',
-
-                            type: 'POST',
-                            data: {
-                                FormId: '@Model.Id',
-                                SubmissionData: JSON.stringify(submission.data),
-                                
-                            },
-                            success: function (res) {
-                                alert(res.message);
-                            },
-                            error: function (xhr) {
-                                console.log(xhr.responseText);
-                                alert("Something went wrong!");
-                            }
-                        });
-                    });
-                });
-        });
-           
+        window.initializeForm(formId, formJson, isAdmin);
     </script>
-
-
-
-
-</div>
+    </div>

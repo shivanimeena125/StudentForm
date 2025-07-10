@@ -121,12 +121,12 @@ namespace Formio.Areas.Identity.Pages.Account
                     var roles = await _signInManager.UserManager.GetRolesAsync(user);
                     if (roles.Contains("Admin") )
                     {
-                        return LocalRedirect("/Admin/Form/AddForms");
+                        return LocalRedirect("/Admin/Form/ViewAllForms");
 
                     }
                     else if (roles.Contains("User"))
                     {
-                        return LocalRedirect("/Home/Index");
+                        return LocalRedirect("/Home/OnlineForms");
                     }
 
                     return LocalRedirect(returnUrl);

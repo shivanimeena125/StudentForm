@@ -23,9 +23,12 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="OnlineForms">online form</a>
                         </li>
-                        @* <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Areas/Admin" asp-controller="Form" asp-action="ViewAllForms">List</a>
-                        </li> *@
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ViewAllSubmissions">Submissions</a>
+                            </li>
+                        }
                        
                     </ul>
                     <partial name="_LoginPartial" />
@@ -35,7 +38,7 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
-            @RenderBody()
+            @RenderBody()`
         </main>
     </div>
 

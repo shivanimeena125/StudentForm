@@ -1,0 +1,31 @@
+﻿@model FormPreviewModel
+
+@{
+    ViewData["Title"] = "Form Preview";
+}
+
+<link rel="stylesheet" href="https://cdn.form.io/js/formio.full.min.css" />
+<script src="https://cdn.form.io/js/formio.full.min.js"></script>
+
+<div class="container mt-5">
+    <h3>Form Preview</h3>
+    <div id="formioRender" class="border rounded bg-light p-3"></div>
+</div>
+
+<script>
+            const formJson = @Html.Raw(Model.FormJson);
+    const submissionData = @Html.Raw(Json.Serialize(Model.SubmissionData));
+
+    try {
+        const parsedData = JSON.parse(submissionData); 
+
+        Formio.createForm(document.getElementById("formioRender"), formJson)
+            .then(form => {
+                form.submission = { data: parsedData }; 
+                form.disabled = true; 
+            });
+    } catch (error) {
+        console.error("JSON Parse Error:", error);
+        alert("Form data format sahi nahi hai");
+    }
+</script>
