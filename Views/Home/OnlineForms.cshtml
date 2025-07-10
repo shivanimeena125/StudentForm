@@ -10,11 +10,12 @@
     <ul class="list-group list-group-flush shadow-sm rounded">
         @foreach (var form in Model)
         {
-            
-                <a asp-controller="Form" asp-action="ViewForm" asp-route-id="@form.Id" class="text-decoration-none">
+             <li class="list-group-item  px-4 py-3">
+
+                <a asp-controller="Form" asp-action="ViewForm" asp-route-formGroupId="@form.FormGroupId" >
                     @form.Title
                 </a>
-            
+            </li>
         }
     </ul>
 </div>

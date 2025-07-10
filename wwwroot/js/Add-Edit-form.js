@@ -22,6 +22,11 @@
             });
 
         this.AddEditForm();
+
+        $('#title').on('input', function () {
+            $('#error').hide();
+        });
+
     },
 
     AddEditForm: function () {
@@ -30,10 +35,11 @@
             const formId = $('#formId').val();
             const formTitle = $('#title').val().trim();
             const formFields = $('#jsonSchema').val().trim();
-
+            $('#error').hide();   
             if (!formTitle) {
-                alert("Please enter a form title.");
-                return;
+                $('#error').show();    
+                $('#title').focus();   
+                return;                
             }
             const isEdit = formId && parseInt(formId) > 0;
             const activeUrl = isEdit ? '/Form/UpdateForm' : '/Form/AddForms';
@@ -47,35 +53,41 @@
                 },
                 success: function (response) {
                     if (response.success) {
-                        alert(response.message);
+                        const message = isEdit ? "Form updated successfully." : "Form added successfully.";
+                        showSuccessPopup(message, response.redirectUrl);
+                    } else {
+                        Swal.fire('Oops!', response.message || 'Something went wrong.', 'error');
                     }
-                    else {
-                        if (response.redirect) {
-                            window.location.href = response.redirect;
-                            return;
-                        } else {
-                            alert(response.message);
-                        }
-                    }
-
-                },
+                }, 
                 error: function (xhr, status, result) {
                     if (xhr.status === 401) {
                         alert("You are not authorized to perform this action. Please log in first.");
-                    }
-                    else if (xhr.status === 400) {
-                        alert("user not found!. Please try again.");
-                    }
-
-                    else {
-                        alert("something went wrong not form submit!. Please try again.");
+                    } else if (xhr.status === 400) {
+                        alert("User not found! Please try again.");
+                    } else {
+                        alert("Something went wrong. Please try again.");
                     }
                 }
-            })
+            });
+
 
         });
 
     }
 
 }
+function showSuccessPopup(message, redirectUrl = null) {
+    Swal.fire({
+        icon: 'success',
+        title: 'Success!',
+        text: message,
+        confirmButtonColor: '#7a5eff',
+        confirmButtonText: 'OK'
+    }).then(() => {
+        if (redirectUrl) {
+            window.location.href = redirectUrl;
+        }
+    });
+}
+
 

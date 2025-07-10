@@ -1,4 +1,5 @@
-﻿@model List<Formio.Models.ViewFormModel>
+﻿﻿
+@model List<Formio.Models.ViewFormModel>
 
 @{
     ViewData["Title"] = "Form List";
@@ -9,9 +10,9 @@
 
 <div class="container mt-4">
     <h2 class="mb-4 text-primary">Online Forms</h2>
-    @*<div>
-        <input type="text" id="searchInput" name="Title" class="form-control mb-3" placeholder="Search by title..." />
-    </div>*@
+    <div>
+        <input type="text" id="titleSearch" name="Title" class="form-control mb-3" placeholder="Search by title..." />
+    </div>
     <div class="row mb-3">
         <div class="col-md-3">
             <label>Start Date</label>
@@ -28,133 +29,60 @@
     </div>
 
 
-        <table class="table table-bordered table-striped" id="formTable">
-            <thead class="table-danger">
-                <tr>
-                    <th>Title</th>
-                    <th>Created By</th>
-                    <th>Created Date</th>
-                    <th>Modified Date</th>
-                   <th>Action</th>
-   
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var form in Model)
-                {
-                    <tr>
-                        <td>@form.Title</td>
-                        <td>@form.CreatedByName</td>
-                        <td>@form.CreatedUtc.ToLocalTime().ToString()</td>
-                        <td>
-                        @(form.ModifiedUtc.HasValue? form.ModifiedUtc.Value.ToLocalTime().ToString() : " ")
-                        </td>
-                    
-                        <td>
-                        @* <a id="ViewBtn" class="btn btn-secondary m-2" asp-controller="Form" asp-action="ViewForm" asp-route-id="@form.Id">View</a> *@
-                        @* <a id="ViewBtn" class="btn btn-secondary m-2" asp-controller="Form" asp-action="ViewFormByGroupId" asp-route-id="@form.FormGroupId">View</a> *@
-                        <a id="ViewBtn" class="btn btn-secondary m-2" asp-controller="Form" asp-action="ViewForm" asp-route-formGroupId="@form.FormGroupId">View</a>
+    <table class="table table-bordered table-striped" id="formTable">
+        <thead class="table-light">
+            <tr>
+                <th>Title</th>
+                <th>Created By</th>
+                <th>Created Date</th>
+                <th>Modified Date</th>
+                <th>Action</th>
 
-
-                        <a id="EditBtn" class="btn btn-warning m-2" asp-controller="Form" asp-action="UpdateForm" asp-route-formGroupId="@form.FormGroupId">Edit</a>
-                        <button  type="submit" class="btn btn-danger deleteBtn m-2" data-id="@form.Id">Delete</button>
-
-                        </td>
-                    </tr>
-                }
-
-            </tbody>
-        </table>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
 </div>
 
-@section Scripts{
+@section Scripts {
     <partial name="_ValidationScriptsPartial" />
+
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <script src="~/js/delete-form.js" asp-append-version="true"></script>
-    <script>
-        $(function(){
-            deleteForm.init();
-        });
 
-              <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+
+    <script src="~/js/delete-form.js" asp-append-version="true"></script>
+    <script src="~/js/FilterData.js" asp-append-version="true"></script>
+
     <style>
-        /* Default sort icon (gray) */
         table.dataTable thead th.sorting:after,
         table.dataTable thead th.sorting:before {
-            color: #007bff; /* Blue for unselected too */
+            color: #007bff;
         }
 
-        /* Ascending arrow (blue) */
         table.dataTable thead th.sorting_asc:after,
         table.dataTable thead th.sorting_asc:before {
             color: #007bff !important;
         }
 
-        /* Descending arrow (blue) */
         table.dataTable thead th.sorting_desc:after,
         table.dataTable thead th.sorting_desc:before {
             color: #007bff !important;
         }
     </style>
-
-
     <script>
-
-
-            $(document).ready(function () {
-            var table = $('#formTable').DataTable({
-                "pageLength": 10,
-                "lengthMenu": [2, 5, 10, 20, 50],
-                "order": [[2, "desc"]],
-                "language": {
-                    "search": "Search Title / Created By:",
-                    "lengthMenu": "Show _MENU_ entries",
-                    "zeroRecords": "No matching records found",
-                    "info": "Showing _START_ to _END_ of _TOTAL_ entries",
-                    "infoEmpty": "No entries available",
-                    "infoFiltered": "(filtered from _MAX_ total entries)"
-                }
-            });
-
-            // 🔎 Custom Date Range Filter Logic
-            $.fn.dataTable.ext.search.push(function (settings, data, dataIndex) {
-                const startDate = $('#startDate').val();
-                const endDate = $('#endDate').val();
-                const createdDate = data[2]; // 3rd column index (Created Date)
-
-                if (!startDate && !endDate) return true;
-
-                const created = new Date(createdDate);
-                const start = startDate ? new Date(startDate) : null;
-                const end = endDate ? new Date(endDate) : null;
-
-                if ((start == null || created >= start) &&
-                    (end == null || created <= end)) {
-                    return true;
-                }
-
-                return false;
-            });
-
-            // 📅 Filter button click
-            $('#filterBtn').on('click', function () {
-                table.draw(); // Redraw table with filtered data
-            });
-
-            // 🔁 Reset button
-            $('#resetBtn').on('click', function () {
-                $('#startDate').val('');
-                $('#endDate').val('');
-                table.search('').columns().search('').draw(); // Reset all filters
-            });
-        });
-       
-    </script>
+        deleteForm.init();
+        Filter.init();
 
     </script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+}
 
- }
+
 

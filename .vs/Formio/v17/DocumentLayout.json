@@ -3,24 +3,84 @@
   "WorkspaceRootPath": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\views\\form\\viewallforms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\views\\form\\viewallforms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\views\\submission\\viewallsubmissions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\views\\submission\\viewallsubmissions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\controllers\\submissioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\controllers\\submissioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\views\\form\\viewform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\views\\form\\viewform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\models\\formsubmissionextended.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:models\\formsubmissionextended.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\repository\\submissionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\repository\\submissionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\services\\submissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\services\\submissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\repository\\isubmissionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\repository\\isubmissionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\models\\formsubmission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:models\\formsubmission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\services\\isubmissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\services\\isubmissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\repository\\formrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\repository\\formrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\services\\formservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\services\\formservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\wwwroot\\js\\filterdata.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:wwwroot\\js\\filterdata.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\views\\form\\viewallforms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\views\\form\\viewallforms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\views\\form\\addforms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\views\\form\\addforms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\models\\viewformmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:models\\viewformmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\views\\form\\addforms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\views\\form\\addforms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\identity\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\identity\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\controllers\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\controllers\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\wwwroot\\js\\delete-form.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -29,30 +89,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\wwwroot\\js\\add-edit-form.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:wwwroot\\js\\add-edit-form.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\models\\viewformmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:models\\viewformmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\controllers\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\controllers\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\views\\form\\viewform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\views\\form\\viewform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\admin\\repository\\formrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\admin\\repository\\formrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\areas\\identity\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|solutionrelative:areas\\identity\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B42FE133-C493-4A16-9302-9FC3D6AF5EF1}|Formio.csproj|c:\\users\\dell\\desktop\\c_sharp_learning\\formio\\studentform\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -66,60 +102,175 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AgIAAA0AAAAAAAAAAABgPRIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "FormSubmissionExtended.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Models\\FormSubmissionExtended.cs",
+              "RelativeDocumentMoniker": "Models\\FormSubmissionExtended.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Models\\FormSubmissionExtended.cs",
+              "RelativeToolTip": "Models\\FormSubmissionExtended.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T20:12:53.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAACUMzMzMzMbwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T20:11:25.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ViewAllSubmissions.cshtml",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Views\\Submission\\ViewAllSubmissions.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Submission\\ViewAllSubmissions.cshtml",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Views\\Submission\\ViewAllSubmissions.cshtml*",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Submission\\ViewAllSubmissions.cshtml*",
+              "ViewState": "AgIAAEMAAACAY2ZmZmYkwFgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-08T20:01:09.211Z"
+              "WhenOpened": "2025-07-09T20:07:18.609Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "SubmissionController.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Controllers\\SubmissionController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\SubmissionController.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Controllers\\SubmissionController.cs*",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\SubmissionController.cs*",
+              "ViewState": "AgIAACwAAABgU2ZmZmYSwC8AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T19:33:22.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SubmissionService.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Services\\SubmissionService.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Services\\SubmissionService.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Services\\SubmissionService.cs",
+              "RelativeToolTip": "Areas\\Admin\\Services\\SubmissionService.cs",
+              "ViewState": "AgIAABYAAAAwMzMzMzM/wBoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T19:27:36.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ISubmissionService.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Services\\ISubmissionService.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Services\\ISubmissionService.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Services\\ISubmissionService.cs",
+              "RelativeToolTip": "Areas\\Admin\\Services\\ISubmissionService.cs",
+              "ViewState": "AgIAAAcAAACQMzMzMzMvwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T19:26:58.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SubmissionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Repository\\SubmissionRepository.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Repository\\SubmissionRepository.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Repository\\SubmissionRepository.cs",
+              "RelativeToolTip": "Areas\\Admin\\Repository\\SubmissionRepository.cs",
+              "ViewState": "AgIAABMAAAAAmJmZmZkrwBoAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T19:26:38.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ISubmissionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Repository\\ISubmissionRepository.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Repository\\ISubmissionRepository.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Repository\\ISubmissionRepository.cs",
+              "RelativeToolTip": "Areas\\Admin\\Repository\\ISubmissionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T19:26:26.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormSubmission.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Models\\FormSubmission.cs",
+              "RelativeDocumentMoniker": "Models\\FormSubmission.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Models\\FormSubmission.cs",
+              "RelativeToolTip": "Models\\FormSubmission.cs",
+              "ViewState": "AgIAAAkAAAAQy8zMzMw6wA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T19:10:58.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FormService.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Services\\FormService.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Services\\FormService.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Services\\FormService.cs",
+              "RelativeToolTip": "Areas\\Admin\\Services\\FormService.cs",
+              "ViewState": "AgIAAFcAAAAAiMzMzMz8v2AAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T19:02:14.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FilterData.js",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\wwwroot\\js\\FilterData.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\FilterData.js",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\wwwroot\\js\\FilterData.js",
+              "RelativeToolTip": "wwwroot\\js\\FilterData.js",
+              "ViewState": "AgIAAB8AAABAZmZmZmYkwD0AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-09T18:59:06.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAICMPR4AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-08T19:03:56.574Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACgAAABAKzMzMzMrwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-08T19:03:36.769Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "ViewFormModel.cs",
               "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Models\\ViewFormModel.cs",
               "RelativeDocumentMoniker": "Models\\ViewFormModel.cs",
               "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Models\\ViewFormModel.cs",
               "RelativeToolTip": "Models\\ViewFormModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-08T19:01:57.642Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 20,
               "Title": "delete-form.js",
               "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\wwwroot\\js\\delete-form.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\delete-form.js",
@@ -131,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 21,
               "Title": "Add-Edit-form.js",
               "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\wwwroot\\js\\Add-Edit-form.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\Add-Edit-form.js",
@@ -143,68 +294,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "ViewForm.cshtml",
               "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Views\\Form\\ViewForm.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Form\\ViewForm.cshtml",
               "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Views\\Form\\ViewForm.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Form\\ViewForm.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAACAZWZmZmYkwBcAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-08T18:55:16.493Z"
+              "WhenOpened": "2025-07-08T18:55:16.493Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 14,
               "Title": "ViewAllForms.cshtml",
               "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Views\\Form\\ViewAllForms.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Form\\ViewAllForms.cshtml",
               "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Views\\Form\\ViewAllForms.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Form\\ViewAllForms.cshtml",
-              "ViewState": "AgIAABcAAAAAa2ZmZmYiwB8AAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAACAZGZmZiYgwFgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-08T18:53:17.815Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-08T18:53:17.815Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 15,
               "Title": "AddForms.cshtml",
               "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Views\\Form\\AddForms.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Form\\AddForms.cshtml",
               "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Views\\Form\\AddForms.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Form\\AddForms.cshtml",
-              "ViewState": "AgIAAAUAAADgODMzMzMXwBYAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-08T18:52:53.848Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 19,
               "Title": "FormController.cs",
               "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Controllers\\FormController.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\FormController.cs",
               "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Controllers\\FormController.cs",
               "RelativeToolTip": "Areas\\Admin\\Controllers\\FormController.cs",
-              "ViewState": "AgIAAJIAAAAA0mZmZmYNwHIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGQAAAAAYJmZmZnZv2cAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-08T18:49:02.117Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Identity\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Data\\ApplicationDbContext.cs",
               "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Identity\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "Areas\\Identity\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAB0AAAAAYGZmZmYawA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-04T18:16:57.041Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 22,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -222,19 +373,19 @@
               "RelativeDocumentMoniker": "Areas\\Admin\\Repository\\FormRepository.cs",
               "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Areas\\Admin\\Repository\\FormRepository.cs",
               "RelativeToolTip": "Areas\\Admin\\Repository\\FormRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHEAAAAAAAAAAABYvYYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-04T18:07:31.384Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 17,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAEYAAAAAMDMzMzMrwEkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAACAzczMzMwnwEYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-04T18:04:48.418Z"
             }

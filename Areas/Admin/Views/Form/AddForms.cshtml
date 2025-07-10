@@ -20,10 +20,15 @@
 
         <div class="form-group mb-4">
             <input type="text" id="title" placeholder="Enter form title" class="form-control" value="@(Model?.Title ?? "")" />
+            <div id="error" style="color: red; font-size: 0.875rem; display: none;">
+                Title is required
+            </div>
+
     </div>
 
         <div id="FormBuilder" class="border rounded bg-light p-3" ></div>
         <input type="hidden" id="formId" value="@Model?.Id" />
+        <input type="hidden" id="formGroupId" value="@Model?.FormGroupId" />
 
         <input type="hidden" id="jsonSchema" class="form-control" value="@(Model?.FormFields ?? "")" />
        
@@ -39,8 +44,10 @@
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
     <script src="~/js/Add-Edit-form.js" asp-append-version="true"></script>
-   
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script>
+
         $(function(){
             AddEditPage.init();
         })

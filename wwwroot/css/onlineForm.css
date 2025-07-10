@@ -1,0 +1,18 @@
+﻿
+
+.form-link {
+    color: #0d6efd; 
+    transition: color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+}
+
+.form-link:hover {
+    color: #0a58ca; 
+    text-decoration: underline;
+}
+
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+    
+}
+

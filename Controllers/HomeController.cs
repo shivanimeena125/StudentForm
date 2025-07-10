@@ -1,4 +1,4 @@
-using Formio.Areas.Admin.Servises;
+using Formio.Areas.Admin.Services;
 using Formio.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -9,9 +9,9 @@ namespace Formio.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public readonly IFormServices _formService;
+        public readonly IFormService _formService;
 
-        public HomeController(ILogger<HomeController> logger,IFormServices formServices)
+        public HomeController(ILogger<HomeController> logger,IFormService formServices)
         {
             _logger = logger;
             _formService = formServices;

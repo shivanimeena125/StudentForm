@@ -10,22 +10,41 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
 <div class="container mt-5">
-
     <h3>@Model.Title</h3>
 
     <div id="formioRender" class="border rounded bg-light p-3"></div>
-   
+
     <script>
-       $(document).ready(function(){
+        const formId = @Model.Id;
 
-             Formio.createForm(document.getElementById('formioRender'), @Html.Raw(Model.FormFields));
-             
+        Formio.createForm(
+            document.getElementById('formioRender'),
+            @Html.Raw(Model.FormFields) // ✅ assuming Model.FormFields is a JSON string
+        ).then(form => {
+            form.on('submit', function (submission) {
+                const submissionData = JSON.stringify(submission.data);
 
-        })
-           
+                fetch('/api/submit-form', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        formId: formId,
+                        submissionData: submissionData
+                    })
+                })
+                .then(response => response.json())
+                .then(result => {
+                    if (result.success) {
+                        alert(result.message);
+                        window.location.href = "/Form/ViewAllForms";
+                    } else {
+                        alert("Submission failed.");
+                    }
+                })
+                .catch(error => console.error("Error submitting form:", error));
+            });
+        });
     </script>
-
-
-
-
 </div>
