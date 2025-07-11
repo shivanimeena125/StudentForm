@@ -19,8 +19,8 @@ namespace Formio.Areas.Admin.Repository
         {
             using var connection = _connectionFactory.CreateConnection();
 
-            string Query = @"INSERT INTO FormSubmissions(SubmittedBy, SubmittedUtc, SubmissionData, FormId)
-                               VALUES(@SubmittedBy, @SubmittedUtc, @SubmissionData, @FormId)";
+            string Query = @"INSERT INTO FormSubmissions(SubmittedBy, SubmittedUtc, SubmissionData, FormGroupId )
+                               VALUES(@SubmittedBy, @SubmittedUtc, @SubmissionData, @FormGroupId )";
 
             await connection.ExecuteAsync(Query, submit);
         }
@@ -29,7 +29,7 @@ namespace Formio.Areas.Admin.Repository
             using var connection = _connectionFactory.CreateConnection();
             string sql = @"SELECT fs.*, f.Title as FormTitle, u.Name as SubmittedUserName
                    FROM FormSubmissions fs
-                   JOIN Forms f ON fs.FormId = f.Id
+                   JOIN Forms f ON fs.FormGroupId  = f.FormGroupId 
                    JOIN AspNetUsers u ON fs.SubmittedBy = u.Id
                    ORDER BY fs.SubmittedUtc DESC";
 
@@ -42,7 +42,7 @@ namespace Formio.Areas.Admin.Repository
 
             string sql = @"SELECT fs.*, f.Title as FormTitle, u.Name as SubmittedUserName
                    FROM FormSubmissions fs
-                   JOIN Forms f ON fs.FormId = f.Id
+                   JOIN Forms f ON fs.FormGroupId  = f.FormGroupId 
                    JOIN AspNetUsers u ON fs.SubmittedBy = u.Id
                    WHERE fs.SubmittedBy = @UserId
                    ORDER BY fs.SubmittedUtc DESC";

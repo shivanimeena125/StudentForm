@@ -27,7 +27,7 @@ public class SubmissionController : Controller
         if (user == null)
             return Unauthorized();
 
-        await _submissionService.SubmitFormAsync(dto.SubmissionData, dto.FormId, user.Id);
+        await _submissionService.SubmitFormAsync(dto.SubmissionData, dto.formGroupId, user.Id);
         return Ok(new { success = true, message = "Form submitted successfully" });
     }
 
@@ -39,19 +39,19 @@ public class SubmissionController : Controller
 
     }
     [HttpGet]
-    [Route("Admin/Submission/GetFormSchema/{id}")]
-    public async Task<IActionResult> GetFormSchema(int id)
+    [Route("Admin/Submission/GetFormSchema/{formGroupId}")]
+    public async Task<IActionResult> GetFormSchema(Guid formGroupId)
     {
-        var formJson = await _submissionService.GetFormSchemaAsync(id);
+        var formJson = await _submissionService.GetFormSchemaAsync(formGroupId);
         if (formJson == null)
             return NotFound();
 
         return Content(formJson, "application/json");
     }
-    public async Task<IActionResult> ViewSubmission(int formId, string submissionData)
+    public async Task<IActionResult> ViewSubmission(Guid formGroupId, string submissionData)
     {
         string decodedData = Uri.UnescapeDataString(submissionData);
-        var model = await _submissionService.GetFormPreviewDataAsync(formId, decodedData);
+        var model = await _submissionService.GetFormPreviewDataAsync(formGroupId, decodedData);
 
         if (model == null)
             return NotFound();

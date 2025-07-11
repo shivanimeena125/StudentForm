@@ -22,11 +22,11 @@ namespace Formio.Areas.Admin.Services
         }
 
 
-        public async Task SubmitFormAsync(string submissionData, int formId, string userId)
+        public async Task SubmitFormAsync(string submissionData, Guid formGroupId, string userId)
         {
             var submission = new FormSubmission
             {
-                FormId = formId,
+                FormGroupId = formGroupId,
                 SubmittedBy = userId,
                 SubmissionData = submissionData,
                 SubmittedUtc = DateTime.UtcNow
@@ -38,9 +38,9 @@ namespace Formio.Areas.Admin.Services
         {
             return await _submissionRepository.GetAllSubmissionsAsync();
         }
-        public async Task<FormPreviewModel> GetFormPreviewDataAsync(int formId, string submissionData)
+        public async Task<FormPreviewModel> GetFormPreviewDataAsync(Guid formGroupId, string submissionData)
         {
-            var form = await _formRepository.GetFormByIdAsync(formId);
+            var form = await _formRepository.GetFormByFormGroupId(formGroupId);
             if (form == null) return null;
 
             return new FormPreviewModel
@@ -49,9 +49,9 @@ namespace Formio.Areas.Admin.Services
                 SubmissionData = submissionData
             };
         }
-        public async Task<string> GetFormSchemaAsync(int formId)
+        public async Task<string> GetFormSchemaAsync(Guid formGroupId)
         {
-            var form = await _formRepository.GetFormByIdAsync(formId);
+            var form = await _formRepository.GetFormByFormGroupId(formGroupId);
             return form?.FormFields;
         }
         public async Task<IEnumerable<FormSubmission>> GetSubmissionsByUserAsync(string userId)

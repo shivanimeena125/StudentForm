@@ -71,9 +71,9 @@
 
           
             document.getElementById("formio-preview").innerHTML = "";
-            const schemaUrl = isAdmin === "true"
-             ? "/Admin/Submission/GetFormSchema/" + formId
-              : "/Home/GetFormSchema/" + formId;
+            // const schemaUrl = isAdmin === "true"
+            //  ? "/Admin/Submission/GetFormSchema/" + formId
+            //   : "/Home/GetFormSchema/" + formId;
             
            fetch("/Admin/Submission/GetFormSchema/" + formId)
 

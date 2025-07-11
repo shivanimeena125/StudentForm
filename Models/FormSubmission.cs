@@ -16,7 +16,7 @@ namespace Formio.Models
         public string SubmissionData { get; set; }
 
         [ForeignKey("Forms")]
-        public int FormId { get; set; }
+        public Guid FormGroupId { get; set; }
 
         public Forms Forms { get; set; } 
 

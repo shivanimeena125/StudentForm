@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\FormIo\\StudentForm\\Formio.csproj": {}
+    "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Formio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\FormIo\\StudentForm\\Formio.csproj": {
+    "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Formio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\FormIo\\StudentForm\\Formio.csproj",
+        "projectUniqueName": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Formio.csproj",
         "projectName": "Formio",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\FormIo\\StudentForm\\Formio.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\FormIo\\StudentForm\\obj\\",
+        "projectPath": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\Formio.csproj",
+        "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dell\\Desktop\\C_Sharp_learning\\FormIo\\StudentForm\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -103,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
